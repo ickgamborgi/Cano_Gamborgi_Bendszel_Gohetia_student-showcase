@@ -1,18 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="css/grid.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://fanshaweinteractive.ca/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="css/grid.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
 
     <title>Fanshawe's Industry Night 2025</title>
-</head>
+  </head>
 
-<body>
-    
-    <script src="js/main.js"></script>
-</body>
+  <body>
+    <header class="header" id="header">
+      <h2 class="hidden">This is for the navigation menu bar</h2>
+      <nav class="nav container">
+        <a href="#" class="nav__logo logo"
+          ><img src="https://fanshaweinteractive.ca/images/fanshawe-logo.svg"
+        /></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#event" class="nav__link">EVENT</a>
+            </li>
+            <li>
+              <a href="#pexhibits" class="nav__link">PROJECT EXHIBIT</a>
+            </li>
+            <li>
+              <a href="#projects" class="nav__link">PROGRAM</a>
+            </li>
+            <li>
+              <a href="#portfolios" class="nav__link">PORTFOLIOS</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-large-line"></i>
+          </div>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-2-line"></i>
+        </div>
+      </nav>
+    </header>
 
+    <main class="main">
+      <h2 class="hidden">This is for the hero image of the page</h2>
+      <section class="parallax">
+        <img src="images/hill1.png" id="hill1" />
+        <img src="images/hill2.png" id="hill2" />
+        <img src="images/hill3.png" id="hill3" />
+        <img src="images/hill4.png" id="hill4" />
+        <img src="images/tree.png" id="tree" />
+        <h3 id="text">
+          <span class="subrax">JOIN US FOR</span><br /><span class="fanshaw"
+            >FANSHAWE COLLEGE</span
+          >
+          <br />
+          INDUSTRY NIGHT 2025
+        </h3>
+        <img src="images/hill5.png" id="hill5" />
+        <img src="images/leaf.png" id="leaf" />
+        <img src="images/plant.png" id="plant" />
+      </section>
+
+      <section class="intro section" id="intro">
+        <h2 class="hidden">This is for the introduction of the page</h2>
+        <h2 class="section__ititle">INTRODUCTION</h2>
+        <div class="intro__container container grid">
+          <div class="intro__data">
+            <p class="intro__description">
+              The SDPA Industry Night for 2023 will showcase student projects
+              and activities from the Interactive Media Design Program.
+              <br />
+              We extend a cordial invitation to an evening of professional
+              engagement, featuring the presentation of Capstone Projects for
+              Foundation Sixty6 and Student Portfolios. Attendees will have the
+              opportunity to peruse and discuss the showcased work while
+              enjoying a selection of catered food and refreshments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="hidden">This is for the project/program section</h2>
+        <h2 class="section__ctitle">
+          STUDENT CAPSTONE PROJECT - FOUNDATION SIXTY6
+        </h2>
+        <div class="projects__container container grid">
+          <video class="projects__img player" controls preload="metadata">
+            <source
+              src="https://fanshaweinteractive.ca/video/video%202.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <i class="ri-group-3-line"></i>
+              <p>
+                Working in small groups and functioning as a mini-studio, level
+                4 students will design, develop, and pitch a professional
+                marketing and advertising campaign.
+              </p>
+            </li>
+            <li class="projects__item">
+              <i class="ri-service-line"></i>
+              <p>
+                The mission of Foundation Sixty6 is to facilitate improved
+                access to mental healthprojects for youth between the ages of 16
+                and 25 suffering from psychosis, bipolar disorder (BPD), and
+                schizophrenia, specifically within Southwestern Ontario.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pexhibit section" id="pexhibits">
+        <h2 class="hidden">This is for the project exhibit section</h2>
+        <div class="pexhibits__container container grid">
+          <div class="pexhibits__data">
+            <h2 class="section__title">PROJECT EXHIBIT</h2>
+          </div>
+          <div class="pexhibits__swiper swiper">
+            <div class="swiper-wrapper">
+              <article class="pexhibits__article swiper-slide">
+                <img
+                  src="https://fanshaweinteractive.ca/images/2.jpg"
+                  alt=""
+                  class="pexhibits__img"
+                />
+              </article>
+              <article class="pexhibits__article swiper-slide">
+                <img
+                  src="https://fanshaweinteractive.ca/images/4.jpg"
+                  alt=""
+                  class="pexhibits__img"
+                />
+              </article>
+              <article class="pexhibits__article swiper-slide">
+                <img
+                  src="https://fanshaweinteractive.ca/images/6.jpg"
+                  alt=""
+                  class="pexhibits__img"
+                />
+              </article>
+              <article class="pexhibits__article swiper-slide">
+                <img
+                  src="https://fanshaweinteractive.ca/images/1.jpg"
+                  alt=""
+                  class="pexhibits__img"
+                />
+              </article>
+              <article class="pexhibits__article swiper-slide">
+                <img
+                  src="https://fanshaweinteractive.ca/images/3.jpg"
+                  alt=""
+                  class="pexhibits__img"
+                />
+              </article>
+              <article class="pexhibits__article swiper-slide">
+                <img
+                  src="https://fanshaweinteractive.ca/images/6.jpg"
+                  alt=""
+                  class="pexhibits__img"
+                />
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="event section" id="event">
+        <h2 class="hidden">This is for the event details</h2>
+        <h2 class="section__etitle">
+          INDUSTRY NIGHT EVENT <br /><span class="eSubtitle"
+            >WE AWAIT FOR YOU!</span
+          >
+        </h2>
+        <div class="event__container container grid">
+          <div class="event__data">
+            <ul class="event__list">
+              <li class="event__item">
+                <i class="ri-calendar-2-fill"></i>
+                <p>APRIL 20, 2025</p>
+              </li>
+              <li class="event__item">
+                <i class="ri-map-pin-line"></i>
+                <p>137 Dundas St, Fanshawe LDA Building, London, ON N6A 1E9</p>
+              </li>
+              <li class="event__item">
+                <i class="ri-time-line"></i>
+                <p>4:00 PM - 4:30 PM | Industry members and Guests arrival</p>
+              </li>
+            </ul>
+
+            <div class="event__buttons">
+              <a href="#" class="button">More Details</a>
+            </div>
+          </div>
+          <div class="event__images">
+            <ul class="event__list">
+              <li class="event__item">
+                <i class="ri-time-line"></i>
+                <p>
+                  4:30 PM - 6:00 PM | Spotlight Presentations | [At The Good
+                  Foundation Inc. Theatre]
+                </p>
+              </li>
+              <li class="event__item">
+                <i class="ri-time-line"></i>
+                <p>
+                  7:00 PM - 8:00 PM | Culinary Delights and Networking [At The
+                  Chef's Table]
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolios section" id="portfolios">
+        <h2 class="section__etitle">
+          WEBSITE DEVELOPERS <br /><span class="eSubtitle"
+            >MEET THE TEAM THAT MADE THIS</span
+          >
+        </h2>
+        <div class="container-dev">
+          <div class="carddev__container">
+            <article class="carddev__article kristina_card">
+              <img src="images/kristina.png" alt="image" class="carddev__img" />
+
+              <div class="carddev__data">
+                <span class="carddev__description">UI/UX Designer</span>
+                <h2 class="carddev__title">Kristina Bendszel</h2>
+                <a href="#" class="carddev__button">View Portfolio</a>
+              </div>
+            </article>
+
+            <article class="carddev__article carlos_card">
+              <img src="images/carlos.png" alt="image" class="carddev__img" />
+
+              <div class="carddev__data">
+                <span class="carddev__description">Motion Designer</span>
+                <h2 class="carddev__title">Carlos Menendez</h2>
+                <a href="#" class="carddev__button">View Portfolio</a>
+              </div>
+            </article>
+
+            <article class="carddev__article henry_card">
+              <img src="images/henry.png" alt="image" class="carddev__img" />
+
+              <div class="carddev__data">
+                <span class="carddev__description">Web Designer</span>
+                <h2 class="carddev__title">Henrique Gamborgi</h2>
+                <a href="#" class="carddev__button">View Portfolio</a>
+              </div>
+            </article>
+            <article class="carddev__article sheldon_card">
+              <img src="images/sheldon.png" alt="image" class="carddev__img" />
+
+              <div class="carddev__data">
+                <span class="carddev__description">Web Developer</span>
+                <h2 class="carddev__title">Sheldon Gohetia</h2>
+                <a href="#" class="carddev__button">View Portfolio</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolios section" id="sportfolios">
+        <h2 class="hidden">This is for the student portfolios</h2>
+        <h2 class="section__etitle">
+          PORTFOLIO SHOWCASE <br /><span class="eSubtitle"
+            >MEET OUR STUDENTS WORK</span
+          ><br />
+          <a href="#" class="card__button_filter active">ALL</a>
+          <a href="#" class="card__button_filter">UX DESIGN</a>
+          <a href="#" class="card__button_filter">WEB DEV</a>
+          <a href="#" class="card__button_filter">MOTION</a>
+        </h2>
+        <div class="card__container swiper cardcontent">
+          <div class="card__content">
+            <div class="swiper-wrapper">
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="images/avatar-1.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">Timothy Bryle Flores</h3>
+                  <p class="card__description">Web Developer</p>
+                  <a href="#" class="card__button">View Portfolio</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="images/avatar-2.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">Ezekiel John Celis</h3>
+                  <p class="card__description">UI/UX Designer</p>
+                  <a href="#" class="card__button">View Portfolio</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="images/avatar-3.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">Milana Gabbassova</h3>
+                  <p class="card__description">Web Designer</p>
+                  <a href="#" class="card__button">View Portfolio</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="images/avatar-4.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">Dina Bondarchuk</h3>
+                  <p class="card__description">Motion Designer</p>
+                  <a href="#" class="card__button">View Portfolio</a>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="images/avatar-5.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+
+                <div class="card__data">
+                  <h3 class="card__name">Stephanie Chan</h3>
+                  <p class="card__description">Web Developer</p>
+                  <a href="#" class="card__button">View Portfolio</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <h2 class="hidden">This is for the footer</h2>
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Fanshawe College</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Enrollment Status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>IDP Program</h4>
+              <ul>
+                <li><a href="#">Winter</a></li>
+                <li><a href="#">Fall</a></li>
+                <li><a href="#">Summer</a></li>
+                <li><a href="#">Spring</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <script src="js/scrollreveal.min.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
+    </main>
+  </body>
 </html>
