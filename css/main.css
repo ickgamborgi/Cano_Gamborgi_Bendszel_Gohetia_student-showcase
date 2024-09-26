@@ -116,27 +116,36 @@ img {
 
 .section__ctitle {
   font: var(--font-semi-bold) var(--h1-font-size) var(--second-font);
-  color: var(--white-color);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-.section__etitle {
-  font: var(--font-semi-bold) var(--h1-font-size) var(--second-font);
-  color: black;
+  color: white;
   text-align: left;
   margin-left: 12rem;
   margin-bottom: 1rem;
 }
+.section__etitle {
+  font: var(--font-semi-bold) var(--h1-font-size) var(--second-font);
+  color: var(--first-color);
+  text-align: left;
+  margin-left: 12rem;
+  margin-bottom: 1rem;
+}
+.cSubtitle {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 100;
+}
 .eSubtitle {
   color: #737374;
   font-size: 1.7rem;
+  font-weight: 100;
 }
 .section__ititle {
   font: var(--font-semi-bold) var(--h1-font-size) var(--second-font);
   color: white;
-  text-align: center;
+  text-align: left;
+  margin-left: 12rem;
   margin-bottom: 1rem;
-  margin-top: 5rem;
+  margin-top: 8rem;
+  font-weight: 200;
 }
 
 .main {
@@ -290,13 +299,19 @@ img {
 
 /*=============== BUTTON ===============*/
 .button {
-  background-color: var(--first-color);
-  color: var(--white-color);
+  background-color: var(--white-color);
+  color: var(--first-color);
   font-weight: var(--font-semi-bold);
-  padding: 0.75rem 2rem;
+  font-size: 1.5rem;
+  /* padding: 0.75rem 2rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  transition: all 0.3s ease-in-out;
 }
 .button:hover {
-  background-color: red;
+  background-color: rgb(24, 23, 23);
   color: var(--white-color);
 }
 
@@ -381,8 +396,28 @@ video {
   opacity: 1;
 }
 .event__item i {
-  font-size: 1.5rem;
+  font-size: 3rem;
   color: black;
+}
+.event__item p {
+  font-size: 1.7rem;
+  color: #737374;
+  font-weight: 100;
+}
+.event__item-p p {
+  font-size: 1.7rem;
+  color: var(--first-color);
+  font-weight: 100;
+}
+.event__item-p .sub-item-p {
+  font-size: 1.2rem;
+  color: #737374;
+  font-weight: 100;
+}
+.event__item-intro p {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 100;
 }
 .event__list {
   display: grid;
@@ -608,6 +643,16 @@ video {
     grid-template-columns: 450px;
     justify-content: center;
   }
+  .section__etitle {
+    padding-left: 12rem;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section__etitle .card__button_filter {
+    margin-top: 20px;
+    padding: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolios__content {
@@ -723,7 +768,7 @@ video {
   }
   .pexhibits__article,
   .pexhibits__img {
-    width: 500px;
+    width: 940px;
   }
 
   .projects__container {
