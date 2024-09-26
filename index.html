@@ -16,10 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <link href="css/grid.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
 
@@ -174,17 +170,15 @@
           </h2>
         </div>
         <div class="pexhibits__container container grid">
-          <div class="pexhibits__swiper swiper">
-            <div class="swiper-wrapper">
-              <article class="pexhibits__article swiper-slide">
-                <img src="images/f1.png" alt="" class="pexhibits__img" />
-              </article>
-              <article class="pexhibits__article swiper-slide">
-                <img src="images/f2.png" alt="" class="pexhibits__img" />
-              </article>
-              <article class="pexhibits__article swiper-slide">
-                <img src="images/f3.png" alt="" class="pexhibits__img" />
-              </article>
+          <div class="col-span-full img-slider">
+            <div id="slider-container">
+              <div id="image-slider">
+                <img class="slider-image" src="images/f1.png" alt="finalist1" />
+                <img class="slider-image" src="images/f2.png" alt="finalist2" />
+                <img class="slider-image" src="images/f3.png" alt="finalist3" />
+              </div>
+              <button id="prev-btn">&#10094;</button>
+              <button id="next-btn">&#10095;</button>
             </div>
           </div>
         </div>
@@ -258,6 +252,21 @@
           </div>
         </div>
       </section>
+      <section class="idp section" id="idp">
+        <h2 class="hidden">This is for the IDP</h2>
+        <h2 class="section__etitle">
+          INTERACTIVE MEDIA DESIGN <br /><span class="eSubtitle"
+            >LEARN ABOUT OUR PROGRAM</span
+          >
+        </h2>
+        <div class="card__container swiper cardcontent"></div>
+      </section>
+
+      <section class="testimonials section" id="testimonials">
+        <h2 class="hidden">This is for the testimonials</h2>
+        <h2 class="section__etitle">TESTIMONIALS</h2>
+        <div class="card__container swiper cardcontent"></div>
+      </section>
 
       <section class="portfolios section" id="portfolios">
         <h2 class="section__etitle">
@@ -320,107 +329,7 @@
           <a href="#" class="card__button_filter">WEB DEV</a>
           <a href="#" class="card__button_filter">MOTION</a>
         </h2>
-        <div class="card__container swiper cardcontent">
-          <div class="card__content">
-            <div class="swiper-wrapper">
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="images/avatar-1.png"
-                    alt="image"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Timothy Bryle Flores</h3>
-                  <p class="card__description">Web Developer</p>
-                  <a href="#" class="card__button">View Portfolio</a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="images/avatar-2.png"
-                    alt="image"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Ezekiel John Celis</h3>
-                  <p class="card__description">UI/UX Designer</p>
-                  <a href="#" class="card__button">View Portfolio</a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="images/avatar-3.png"
-                    alt="image"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Milana Gabbassova</h3>
-                  <p class="card__description">Web Designer</p>
-                  <a href="#" class="card__button">View Portfolio</a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="images/avatar-4.png"
-                    alt="image"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Dina Bondarchuk</h3>
-                  <p class="card__description">Motion Designer</p>
-                  <a href="#" class="card__button">View Portfolio</a>
-                </div>
-              </article>
-
-              <article class="card__article swiper-slide">
-                <div class="card__image">
-                  <img
-                    src="images/avatar-5.png"
-                    alt="image"
-                    class="card__img"
-                  />
-                  <div class="card__shadow"></div>
-                </div>
-
-                <div class="card__data">
-                  <h3 class="card__name">Stephanie Chan</h3>
-                  <p class="card__description">Web Developer</p>
-                  <a href="#" class="card__button">View Portfolio</a>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- Navigation buttons -->
-          <div class="swiper-button-next">
-            <i class="ri-arrow-right-s-line"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="ri-arrow-left-s-line"></i>
-          </div>
-
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
+        <div class="card__container swiper cardcontent"></div>
       </section>
 
       <footer class="footer">
@@ -469,9 +378,7 @@
       <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-line"></i>
       </a>
-
-      <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
       <script src="js/main.js"></script>
     </main>
   </body>

@@ -37,40 +37,6 @@ const shadowHeader = () => {
 };
 window.addEventListener("scroll", shadowHeader);
 
-// ADD SWIPER LOGIC
-let swiperCards = new Swiper(".card__content", {
-  loop: true,
-  spaceBetween: 32,
-  grabCursor: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    600: {
-      slidesPerView: 2,
-    },
-    968: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-const swiperpexhibits = new Swiper(".pexhibits__swiper", {
-  loop: true,
-  grabCursor: true,
-  slidesPerView: "auto",
-  centeredSlides: "auto",
-});
-
 // ADD SHOW SCROLL UP LOGIC
 const scrollUp = () => {
   const scrollUp = document.querySelector("#scroll-up");
@@ -81,38 +47,57 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-// ADD SCROLL REVEAL ANIMATION LOGIC
-const sr = ScrollReveal({
-  origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: 300,
-  reset: true,
+gsap.to(".section__ititle, .section__ctitle, .section__etitle", {
+  scrollTrigger: ".box",
+  x: 20,
+  delay: 0.3,
 });
-sr.reveal(`.intro__data, .pexhibits__container, .card__container`);
-sr.reveal(`.event__data, .event__images`, { delay: 600, scale: 0.5 });
-sr.reveal(`.event__leaf`, { delay: 1200 });
-sr.reveal(`.projects__img, .kristina_card, .carlos_card, .player`, {
-  origin: "left",
-});
-sr.reveal(`.projects__list, .henry_card, .sheldon_card, .contact__data`, {
-  origin: "right",
-});
-sr.reveal(`.portfolios__card`, { interval: 100 });
 
-// ADD PARALLAX EFFECTS SCROLL LOGIC
-let text = document.querySelector("#text");
-let leaf = document.querySelector("#leaf");
-let hill1 = document.querySelector("#hill1");
-let hill4 = document.querySelector("#hill4");
-let hill5 = document.querySelector("#hill5");
+// This is for the image slider
+const slider = document.querySelector("#image-slider");
+const prevBtn = document.querySelector("#prev-btn");
+const nextBtn = document.querySelector("#next-btn");
+let slideWidth = slider.clientWidth;
+let currentIndex = 0;
+//By using a negative value, the slides are translated to the left
+function showSlide(index) {
+  const newTransformValue = -index * slideWidth + "px";
+  //The -index is used to calculate the position of the slide in the opposite direction.
+  // For example, if index is 1, then -index becomes -1, which means moving one slide width to the left.
+  // If index is 2, then -index becomes -2, which means moving two slide widths to the left.
+  console.log(newTransformValue);
+  slider.style.transform = "translateX(" + newTransformValue + ")";
+}
 
-window.addEventListener("scroll", () => {
-  let value = window.scrollY;
-  text.style.marginTop = value * 0.8 + "px";
-  leaf.style.top = value * -1.5 + "px";
-  leaf.style.left = value * 1.5 + "px";
-  hill5.style.left = value * 1.5 + "px";
-  hill4.style.left = value * -1.5 + "px";
-  hill1.style.top = value * 0.2 + "px";
-});
+function nextSlide() {
+  console.log(currentIndex);
+  currentIndex++;
+  //if count is greater than or equal to number of slides restart
+  if (currentIndex >= slider.children.length) {
+    currentIndex = 0;
+  }
+  showSlide(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex--;
+  // if count is less than 0 go to last slide
+  if (currentIndex < 0) {
+    currentIndex = slider.children.length - 1;
+  }
+  showSlide(currentIndex);
+}
+
+function updateSlideWidth() {
+  slideWidth = slider.clientWidth;
+  showSlide(currentIndex); // Adjust the position of the current slide on resize
+}
+
+// Attach click event handlers to buttons using event listeners
+prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", nextSlide);
+
+window.addEventListener("resize", updateSlideWidth);
+
+// Call updateSlideWidth initially to set the correct initial slide width
+updateSlideWidth();
