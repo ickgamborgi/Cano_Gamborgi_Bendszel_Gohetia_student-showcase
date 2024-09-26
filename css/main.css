@@ -509,6 +509,27 @@ video {
   justify-self: center;
 }
 
+/*=============== Program Information ===============*/
+.prog_information {
+  display: flex;
+  flex-direction: row;
+}
+
+.prog_text {
+  font: var(--font-regular) var(--normal-font-size) var(--second-font);
+  color: var(--second-color);
+  text-align: left;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
+
+.prog_information img {
+  margin-right: 12rem;
+}
+
+/*=============== Testimonials ===============*/
+
 /*=============== Portfolios ===============*/
 
 .portfolios__container {
@@ -789,7 +810,7 @@ video {
     order: 1;
   }
   .section__etitle {
-    padding-left: 12rem;
+    padding-left: 10rem;
     padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -798,7 +819,11 @@ video {
     margin-top: 20px;
     padding: 10px;
   }
-}
+
+  .prog_text {
+    margin-left: 12rem;
+    margin-right: 9rem;
+}}
 
 /* For large devices */
 
