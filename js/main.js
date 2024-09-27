@@ -47,8 +47,9 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-gsap.to(".section__ititle, .section__ctitle, .section__etitle", {
-  scrollTrigger: ".box",
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".section__ititle", {
+  scrollTrigger: ".section__ititle",
   x: 20,
   delay: 0.3,
 });
