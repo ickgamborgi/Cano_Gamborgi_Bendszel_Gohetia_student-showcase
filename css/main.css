@@ -533,7 +533,7 @@ video {
 /*=============== Program Information ===============*/
 .prog_information {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .prog_text {
@@ -542,11 +542,29 @@ video {
   text-align: left;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .prog_information img {
   margin-right: 12rem;
+}
+
+.prog_button {
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.prog_button:hover {
+  background-color: rgb(24, 23, 23);
+  color: var(--white-color);
 }
 
 /*=============== Testimonials ===============*/
@@ -745,6 +763,15 @@ video {
     margin-top: 20px;
     padding: 10px;
   }
+
+  .prog_button {
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /* For medium devices */
@@ -823,6 +850,13 @@ video {
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .prog_button {
+    font-size: 1rem;
+    margin-left: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -883,7 +917,12 @@ video {
   .prog_text {
     margin-left: 12rem;
     margin-right: 9rem;
-  }
+  .prog_button {
+  font-size: 1rem;
+  margin-left: 12rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 }
 
 /* For large devices */
