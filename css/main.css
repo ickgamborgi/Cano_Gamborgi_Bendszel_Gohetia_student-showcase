@@ -191,7 +191,7 @@ img {
 }
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1280px) {
   .nav__menu {
     position: fixed;
     left: -100%;
@@ -436,7 +436,7 @@ img {
 }
 .pexhibits__img {
   width: 200px;
-  transform: scale(.8);
+  transform: scale(0.8);
   transition: scale 0.4s, filter 0.4s;
 }
 .pexhibits__leaf-1,
@@ -746,9 +746,9 @@ video {
     grid-column: 1;
   }
 
-.card__button {
-  margin-left: 1rem;
-}
+  .card__button {
+    margin-left: 1rem;
+  }
 
   .section__ititle {
     padding: 10px;
@@ -799,7 +799,7 @@ video {
   .event__container {
     grid-template-rows: 180px;
   }
-  
+
   .event__buttons a {
     margin-top: 2px;
   }
@@ -890,10 +890,9 @@ video {
   }
 
   .card__button {
-
-  padding-left: 10rem;
-  margin-left: auto;
-  margin-right: auto;
+    padding-left: 10rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section__etitle {
@@ -918,7 +917,6 @@ video {
   .prog_text {
     margin-left: 12rem;
     margin-right: 9rem;
-}
   .prog_button {
   font-size: 1rem;
   margin-left: 12rem;
@@ -1169,7 +1167,6 @@ video {
   .scrollup {
     right: 3rem;
   }
-  
 }
 
 /*=============== FOOTER ===============*/
@@ -1241,7 +1238,6 @@ ul {
   color: #24262b;
   background-color: #ffffff;
 }
-
 
 /*responsive*/
 
