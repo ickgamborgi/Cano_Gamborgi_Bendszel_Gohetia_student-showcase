@@ -1,64 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="https://fanshaweinteractive.ca/icons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/grid.css" rel="stylesheet" type="text/css" />
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
 
-    <title>Fanshawe's Industry Night 2025</title>
+<!-- HEAD -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+      <link rel="shortcut icon" href="https://fanshaweinteractive.ca/icons/favicon.ico" type="image/x-icon"/>
+
+    <!-- CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet"/>
+
+    <link href="css/grid.css" rel="stylesheet" type="text/css" /> <!-- Grid Link -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" /> <!-- Main CSS file Link -->
+
+    <title>Fanshawe's Industry Night 2025</title> <!-- Document Title -->
   </head>
 
+  <!-- BODY -->
   <body>
+    <h1 class="hidden">Fanshawe's Industry Night 2025</h1>
+
+    <!-- Header -->
     <header class="header" id="header">
-      <h2 class="hidden">This is for the navigation menu bar</h2>
+      <h2 class="hidden">Header</h2>
+
       <nav class="nav container">
+        <h3 class="hidden">Navigation Bar</h3>
+
         <a href="#" class="nav__logo logo"
-          ><img src="https://fanshaweinteractive.ca/images/fanshawe-logo.svg"
-        /></a>
+          ><img src="https://fanshaweinteractive.ca/images/fanshawe-logo.svg" alt="Fanshawe Logo"/>
+        </a>
+
         <div class="nav__menu" id="nav-menu">
+          <h4 class="hidden">Navigation Menu</h4>
           <ul class="nav__list">
             <li>
-              <a href="#event" class="nav__link">EVENT</a>
+              <a href="#event" class="nav__link"><h5 class="nav__link">Event</h5></a>
             </li>
             <li>
-              <a href="#pexhibits" class="nav__link">PROJECT EXHIBIT</a>
+              <a href="#pexhibits" class="nav__link"><h5 class="nav__link">Project Exhibit</h5></a>
             </li>
             <li>
-              <a href="#projects" class="nav__link">PROGRAM</a>
+              <a href="#projects" class="nav__link"><h5 class="nav__link">Program</h5></a>
             </li>
             <li>
-              <a href="#portfolios" class="nav__link">PORTFOLIOS</a>
+              <a href="#portfolios" class="nav__link"><h5 class="nav__link">Portfolios</h5></a>
             </li>
           </ul>
           <div class="nav__close" id="nav-close">
+            <h5 class="hidden">Close Button</h5>
             <i class="ri-close-large-line"></i>
           </div>
         </div>
+
         <div class="nav__toggle" id="nav-toggle">
+          <h4 class="hidden">Burger Menu</h4>
           <i class="ri-apps-2-line"></i>
         </div>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main class="main">
-      <h2 class="hidden">This is for the hero image of the page</h2>
+      <h2 class="hidden">Main Content</h2>
+
       <section class="parallax">
-        <img src="images/hero-image.png" id="hill1" />
-        <!-- <h3 id="text">
+        <h3 class="hidden">Hero Section</h3>
+        <img src="images/hero-image.png" id="hill1" alt="Hero Image"/>
+        
+        <!-- THIS SECTION IS NOT COMPLETE, HIDDEN FOR CHECKPOINT!
+        <h3 id="text">
           <span class="subrax">JOIN US FOR</span><br /><span class="fanshaw"
             >FANSHAWE COLLEGE</span
           >
@@ -67,15 +83,20 @@
         </h3> -->
       </section>
 
+      <!-- Introduction Section -->
       <section class="intro section" id="intro">
-        <h2 class="hidden">This is for the introduction of the page</h2>
-        <h2 class="section__ititle">
-          WELCOME TO INDUSTRY NIGHT! <br />
-          <span class="cSubtitle">INVITATION</span>
-        </h2>
+        <h3 class="hidden">Introduction Section</h3>
+
+        <h4 class="section__ititle">
+          Welcome to Industry Night! <br/>
+          <span class="cSubtitle">Invitation</span>
+        </h4>
+
         <div class="event__container container grid">
+          <h4 class="hidden">Text Container</h4>
           <div class="event__data">
-            <ul class="event__ilist">
+            <h5 class="hidden">Column 1</h5>
+            <ul class="event__ilist container grid">
               <li class="event__item-intro">
                 <p>
                   We are thrilled to invite you to an inspiring evening
@@ -84,13 +105,13 @@
                   Arms Memorial.
                 </p>
               </li>
-              <br />
               <!-- <div class="event__buttons">
                 <a href="#" class="button">FIND US</a>
               </div> -->
             </ul>
           </div>
           <div class="event__images">
+            <h5 class="hidden">Column 2</h5>
             <ul class="event__ilist">
               <li class="event__item-intro">
                 <p>
@@ -101,21 +122,23 @@
                 </p>
               </li>
             </ul>
-            <br /><br /><br />
           </div>
+
           <div class="event__buttons">
+            <h5 class="hidden">Find Us Button</h5>
             <a href="#" class="button">FIND US</a>
           </div>
         </div>
       </section>
 
+      <!-- Capstone Proejct Section -->
       <section class="projects section" id="projects">
-        <h2 class="hidden">This is for the project/program section</h2>
-        <h2 class="section__ctitle">
-          BROTHERS IN ARMS MEMORIAL <br /><span class="cSubtitle"
-            >STUDENT CAPSTONE PROJECT</span
-          >
-        </h2>
+        <h3 class="hidden">Capstone Project</h3>
+
+        <h4 class="section__ititle">
+          Brothers In Arms Memorial <br/>
+          <span class="cSubtitle">Student Capstone Project</span>
+        </h4>
         <div class="projects__container container grid">
           <video class="projects__img player" controls preload="metadata">
             <source
@@ -123,7 +146,7 @@
               type="video/mp4"
             />
           </video>
-          <ul class="projects__list">
+          <ul class="projects__list container grid">
             <li class="projects__item">
               <i class="ri-group-fill"></i>
               <p>
@@ -153,16 +176,19 @@
         </div>
       </section>
 
+      <!-- Project Exhibit Section -->
       <section class="pexhibit section" id="pexhibits">
-        <h2 class="hidden">This is for the project exhibit section</h2>
+        <h3 class="hidden">Project Exhibit Section</h3>
+
         <div class="pexhibits__data">
-          <h2 class="section__etitle">
-            PROJECT EXHIBIT <br /><span class="eSubtitle"
-              >STUDENT CAPSTONE PROJECT</span
-            >
-          </h2>
+          <h4 class="section__etitle">
+            PROJECT EXHIBIT <br/>
+            <span class="eSubtitle">STUDENT CAPSTONE PROJECT</span>
+          </h4>
         </div>
+
         <div class="pexhibits__container container grid">
+          <h5 class="hidden">Project Exhibit Gallery</h5>
           <div class="col-span-full img-slider">
             <div id="slider-container">
               <div id="image-slider">
@@ -177,14 +203,16 @@
         </div>
       </section>
 
+      <!-- Event Details Section -->
       <section class="event section" id="event">
-        <h2 class="hidden">This is for the event details</h2>
-        <h2 class="section__etitle">
-          INDUSTRY NIGHT EVENT <br /><span class="eSubtitle"
-            >INFORMATION AND DETAILS</span
-          >
-        </h2>
+        <h3 class="hidden">Event Details</h3>
+        <h4 class="section__etitle">
+          INDUSTRY NIGHT EVENT <br />
+          <span class="eSubtitle">INFORMATION AND DETAILS</span>
+        </h4>
+
         <div class="event__container container grid">
+          <h5 class="hidden">Information Container</h5>
           <div class="event__data">
             <ul class="event__list">
               <li class="event__item">
@@ -246,15 +274,19 @@
         </div>
       </section>
 
+      <!-- IDP Program Section -->
       <section class="idp section" id="idp">
-        <h2 class="hidden">This is for the IDP</h2>
-        <h2 class="section__etitle">
-          INTERACTIVE MEDIA DESIGN <br /><span class="eSubtitle"
-            >LEARN ABOUT OUR PROGRAM</span
-          >
-        </h2>
+        <h3 class="hidden">IDP Program Section</h3>
+        <h4 class="section__etitle">
+          INTERACTIVE MEDIA DESIGN <br />
+          <span class="eSubtitle">LEARN ABOUT OUR PROGRAM</span>
+        </h4>
+
         <div class="prog_information">
+          <h5 class="hidden">Program Information</h5>
           <div class="prog_text">
+            <h6 class="hidden">Paragraph Text</h6>
+
             <p>Learn about our program and how it prepares students for the industry.</p><br>
             <p>Unlock Your Digital Creativity Future with Us! Explore a world of digital 
             design, development, and innovation in our two-year Interactive Media Design 
@@ -263,33 +295,46 @@
             animation, and more. Access cutting-edge facilities and industry-standard 
             software. Open doors to exciting career opportunities in various fields. Stay 
             ahead with emerging technologies and industry-relevant tools!</p>
-            </div>
+          </div>
+
           <div>
+            <h6 class="hidden">Program Image Gallery</h6>
             <!-- <img src="images/prog-info-img1.jpg" alt="Presentations of projects to professors"> -->
           </div>
-        <div class="card__container swiper cardcontent"></div>
+
+          <div class="card__container swiper cardcontent">
+            <h6 class="hidden">Card Container Swiper</h6>
+          </div>
+
+        </div>
       </section>
 
+      <!-- Testimonials Section -->
       <section class="testimonials section" id="testimonials">
-        <h2 class="hidden">This is for the testimonials</h2>
-        <h2 class="section__etitle">TESTIMONIALS</h2>
-        <div class="card__container swiper cardcontent"></div>
+        <h3 class="hidden">Testimonials Section</h3>
+          <h4 class="section__etitle">TESTIMONIALS</h4>
+          <div class="card__container swiper cardcontent">
+            <h4 class="hidden">Testimonials Container Swiper</h4>
+          </div>
       </section>
 
+      <!-- Website Developers Section -->
       <section class="portfolios section" id="portfolios">
-        <h2 class="section__etitle">
-          WEBSITE DEVELOPERS <br /><span class="eSubtitle"
-            >MEET THE TEAM THAT MADE THIS</span
-          >
-        </h2>
+        <h3 class="hidden">Website Developers Section</h3>
+        <h4 class="section__etitle">
+          WEBSITE DEVELOPERS <br />
+          <span class="eSubtitle">MEET THE TEAM THAT MADE THIS</span>
+        </h4>
+
         <div class="container-dev">
+          <h5 class="hidden">Team Cards Container</h5>
           <div class="carddev__container">
             <article class="carddev__article kristina_card">
               <img src="images/kristina.png" alt="image" class="carddev__img" />
 
               <div class="carddev__data">
                 <span class="carddev__description">UI/UX Designer</span>
-                <h2 class="carddev__title">Kristina Bendszel</h2>
+                <h6 class="carddev__title">Kristina Bendszel</h6>
                 <a href="#" class="carddev__button">View Portfolio</a>
               </div>
             </article>
@@ -299,7 +344,7 @@
 
               <div class="carddev__data">
                 <span class="carddev__description">Motion Designer</span>
-                <h2 class="carddev__title">Carlos Menendez</h2>
+                <h6 class="carddev__title">Carlos Menendez</h6>
                 <a href="#" class="carddev__button">View Portfolio</a>
               </div>
             </article>
@@ -309,7 +354,7 @@
 
               <div class="carddev__data">
                 <span class="carddev__description">Web Designer</span>
-                <h2 class="carddev__title">Henrique Gamborgi</h2>
+                <h6 class="carddev__title">Henrique Gamborgi</h6>
                 <a href="#" class="carddev__button">View Portfolio</a>
               </div>
             </article>
@@ -318,7 +363,7 @@
 
               <div class="carddev__data">
                 <span class="carddev__description">Web Developer</span>
-                <h2 class="carddev__title">Sheldon Gohetia</h2>
+                <h6 class="carddev__title">Sheldon Gohetia</h6>
                 <a href="#" class="carddev__button">View Portfolio</a>
               </div>
             </article>
@@ -326,17 +371,20 @@
         </div>
       </section>
 
+      <!-- Students Portfolios Section -->
       <section class="portfolios section" id="sportfolios">
-        <h2 class="hidden">This is for the student portfolios</h2>
-        <h2 class="section__etitle">
-          PORTFOLIO SHOWCASE <br /><span class="eSubtitle"
-            >MEET OUR STUDENTS WORK</span
-          ><br />
-          <a href="#" class="card__button_filter active">ALL</a>
-          <a href="#" class="card__button_filter">UX DESIGN</a>
-          <a href="#" class="card__button_filter">WEB DEV</a>
-          <a href="#" class="card__button_filter">MOTION DESIGN</a>
-        </h2>
+        <h3 class="hidden">Students Portfolios Section</h3>
+        <h4 class="section__etitle">
+          PORTFOLIO SHOWCASE <br />
+          <span class="eSubtitle">MEET OUR STUDENTS WORK</span><br/>
+        </h4>
+        <div class="card__button">
+          <h5><a href="#" class="card__button_filter active">ALL</a></h5>
+          <h5><a href="#" class="card__button_filter">UX DESIGN</a></h5>
+          <h5><a href="#" class="card__button_filter">WEB DEV</a></h5>
+          <h5><a href="#" class="card__button_filter">MOTION DESIGN</a></h5>
+        </div>
+        
 
         <!-- <div class="showcase-container">
           <div id="one">1</div>
@@ -346,8 +394,9 @@
         </div> -->
       </section>
 
+      <!-- Footer -->
       <footer class="footer">
-        <h2 class="hidden">This is for the footer</h2>
+        <h3 class="hidden">Footer</h3>
         <div class="container">
           <div class="row">
             <div class="footer-col">
@@ -360,7 +409,7 @@
               </ul>
             </div>
             <div class="footer-col">
-              <h4>get help</h4>
+              <h4>Get Help</h4>
               <ul>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Events</a></li>
@@ -378,7 +427,7 @@
               </ul>
             </div>
             <div class="footer-col">
-              <h4>follow us</h4>
+              <h4>Follow Us</h4>
               <div class="social-links">
                 <a href="#"><i class="ri-linkedin-fill"></i></a>
                 <a href="#"><i class="ri-github-fill"></i></a>
@@ -389,9 +438,12 @@
         </div>
       </footer>
 
+      <!-- Back to Top Button -->
       <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-line"></i>
       </a>
+
+      <!-- Script Links -->
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
       <script src="js/main.js"></script>
     </main>
