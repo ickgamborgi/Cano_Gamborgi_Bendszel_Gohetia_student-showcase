@@ -35,14 +35,20 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  /*--video player --*/
-
-  --plyr-color-main: red;
-  --plyr-control-icon-size: 12px;
-  --plyr-control-radius: 20px;
+  /* -- Video Player -- */
+  --plyr-color-main: hsl(3, 79%, 49%);
+  --plyr-control-icon-size: 1rem;
+  --plyr-control-radius: 0px;
+  --plyr-video-controls-background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    hsl(3, 79%, 49%)
+  );
 }
 
-/*-- Responsive typography --*/
+/* 2. --- Typography --- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap");
+
 @media screen and (min-width: 1280px) {
   :root {
     --biggest-font-size: 5.5rem;
@@ -102,6 +108,55 @@ img {
 .section {
   padding-block: 5rem 1rem;
 }
+
+/* 4. --- Header --- */
+
+/* 5. --- Hero --- */
+
+/* 6. --- Introduction --- */
+
+/* 7. --- Capstone Project/Video --- */
+
+/* 8. --- Project Exhibit --- */
+
+/* 9. --- Event --- */
+
+/* 10. --- IDP Program --- */
+
+/* 11. --- Testimonials --- */
+
+/* 12. --- Portfolios --- */
+
+/* 13. --- Footer --- */
+
+/* 14. --- Responsive Styles --- */
+
+/* 14.1 --- Mobile --- */
+
+/* 14.2 --- Tablet --- */
+
+/* 14.3 --- Desktop --- */
+@media screen and (min-width: 1200px) {
+  .container-dev {
+    /* height: 100vh; */
+    padding-top: 3rem;
+  }
+
+  .carddev__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .carddev__img {
+    width: 280px;
+  }
+  .carddev__data {
+    width: 279px;
+    padding-inline: 2.5rem;
+  }
+}
+
+/* 14.4 --- XL Desktop --- */
+
+/* 15. --- Animations --- */
 
 .section__ctitle {
   font: var(--h1-font-size) var(--second-font);
@@ -884,6 +939,13 @@ video {
     margin-left: 12rem;
     margin-right: 9rem;
   }
+
+  .prog_button {
+    font-size: 1rem;
+    margin-left: 12rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /* For large devices */
@@ -1146,7 +1208,7 @@ ul {
 }
 .footer-col {
   width: 25%;
-  padding: 0 15px;
+  padding: 0 55px;
 }
 .footer-col h4 {
   font-size: 18px;
@@ -1199,7 +1261,13 @@ ul {
   color: #24262b;
   background-color: #ffffff;
 }
-
+.footer-img {
+  width: 400px;
+}
+#foot-contact,
+#foot-campus {
+  font-weight: 600;
+}
 /*responsive*/
 
 @media (max-width: 767px) {
@@ -1350,24 +1418,5 @@ ul {
   .carddev__container {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1.5rem;
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 1200px) {
-  .container-dev {
-    /* height: 100vh; */
-    padding-top: 3rem;
-  }
-
-  .carddev__container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .carddev__img {
-    width: 280px;
-  }
-  .carddev__data {
-    width: 279px;
-    padding-inline: 2.5rem;
   }
 }
