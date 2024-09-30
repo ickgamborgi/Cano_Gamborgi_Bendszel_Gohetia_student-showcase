@@ -63,7 +63,6 @@ corresponding to CSS variables for easier shortcut. */
     rgba(0, 0, 0, 0),
     hsl(3, 79%, 49%)
   );
-
 }
 
 /* 2. --- Typography --- */
@@ -182,13 +181,13 @@ img {
 
 /* 15. --- Animations --- */
 
-  /* 14.1 --- Mobile --- */
+/* 14.1 --- Mobile --- */
 
-  /* 14.2 --- Tablet --- */
+/* 14.2 --- Tablet --- */
 
-  /* 14.3 --- Desktop --- */
+/* 14.3 --- Desktop --- */
 
-  /* 14.4 --- XL Desktop --- */
+/* 14.4 --- XL Desktop --- */
 
 /* 15. --- Animations --- */
 
@@ -556,13 +555,13 @@ video {
   color: black;
 }
 .event__item p {
-  font-size: var(--small-font-size);
+  font-size: 1.2rem;
   color: #737374;
-  font-weight: 100;
+  font-weight: 300;
 }
 .event__item-p p {
   color: var(--first-color);
-  font-weight: 100;
+  font-weight: 300;
 }
 .event__images {
   margin-top: 4rem;
@@ -570,7 +569,7 @@ video {
 .event__item-p .sub-item-p {
   font-size: 1.2rem;
   color: #737374;
-  font-weight: 100;
+  font-weight: 300;
 }
 .event__item-intro p {
   color: white;
@@ -1277,6 +1276,11 @@ ul {
 .footer-col {
   width: 25%;
   padding: 0 55px;
+}
+.quicklink {
+  border-left: #ffffff solid 5px;
+  width: 25%;
+  padding: 0 15px;
 }
 .footer-col h4 {
   font-size: 18px;
