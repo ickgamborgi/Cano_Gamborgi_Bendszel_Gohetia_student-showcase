@@ -1,5 +1,9 @@
 console.log("Javascript file is linked.");
 
+// Video Player
+
+const player = new Plyr('video');
+
 // SHOW MENU
 const navMenu = document.querySelector("#nav-menu"),
   navToggle = document.querySelector("#nav-toggle"),

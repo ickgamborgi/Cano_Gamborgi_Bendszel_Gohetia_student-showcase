@@ -1,21 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap");
+/* Let's keep our CSS organized!
 
-/*-- ADDED HERE THE VARIABLES CSS FOR EASY SHORTCUT --*/
+1. Variables
+2. Typography
+3. General Styles
+4. Header
+5. Hero
+6. Introduction
+7. Capstone Project/Video
+8. Project Exhibit
+9. Event
+10. IDP Program
+11. Testimonials
+12. Portfolios
+13. Footer
+14. Responsive Styles
+  14.1. Mobile
+  14.2. Tablet
+  14.3. Desktop
+  14.4. XL Desktop
+15. Animations
+
+*/
+
+/* 1. --- Variables --- 
+corresponding to CSS variables for easier shortcut. */
+
 :root {
   --header-height: 3.5rem;
 
-  /*-- Colors --*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-
+  /* -- Colors --
+  color mode HSL(hue, saturation, lightness) */
   --first-color: hsl(3, 79%, 49%);
   --first-color-dark: hsl(0, 75%, 41%);
   --first-color-darken: hsl(0, 75%, 31%);
   --second-color: hsl(0, 0%, 4%);
   --white-color: hsl(0, 0%, 100%);
 
-  /*-- Font and typography --*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-
+  /* -- Font and typography --
+  .5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --second-font: "Montserrat", sans-serif;
   --biggest-font-size: 3.5rem;
@@ -25,13 +47,11 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
 
-  /*-- Font weight --*/
-
+  /* -- Font weight -- */
   --font-regular: 400;
   --font-semi-bold: 600;
 
-  /*-- z index --*/
-
+  /* -- Z index -- */
   --z-tooltip: 10;
   --z-fixed: 100;
 
@@ -43,6 +63,7 @@
     rgba(0, 0, 0, 0),
     hsl(3, 79%, 49%)
   );
+
 }
 
 /* 2. --- Typography --- */
@@ -59,6 +80,9 @@
     --small-font-size: 0.875rem;
   }
 }
+
+/* 3. --- General Styles ---
+quick styling and useful general elements */
 
 * {
   box-sizing: border-box;
@@ -155,6 +179,16 @@ img {
 }
 
 /* 14.4 --- XL Desktop --- */
+
+/* 15. --- Animations --- */
+
+  /* 14.1 --- Mobile --- */
+
+  /* 14.2 --- Tablet --- */
+
+  /* 14.3 --- Desktop --- */
+
+  /* 14.4 --- XL Desktop --- */
 
 /* 15. --- Animations --- */
 
@@ -588,7 +622,7 @@ video {
 /*=============== Program Information ===============*/
 .prog_information {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .prog_text {
@@ -597,11 +631,29 @@ video {
   text-align: left;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .prog_information img {
   margin-right: 12rem;
+}
+
+.prog_button {
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.prog_button:hover {
+  background-color: rgb(24, 23, 23);
+  color: var(--white-color);
 }
 
 /*=============== Testimonials ===============*/
@@ -800,6 +852,15 @@ video {
     margin-top: 20px;
     padding: 10px;
   }
+
+  .prog_button {
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /* For medium devices */
@@ -877,6 +938,13 @@ video {
     align-content: space-around;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .prog_button {
+    font-size: 1rem;
+    margin-left: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
