@@ -59,7 +59,10 @@ corresponding to CSS variables for easier shortcut. */
   --plyr-color-main: hsl(3, 79%, 49%);
   --plyr-control-icon-size: 1rem;
   --plyr-control-radius: 0px;
-  --plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), hsl(3, 79%, 49%));
+  --plyr-video-controls-background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    hsl(3, 79%, 49%)
+  );
 
 }
 
@@ -130,7 +133,6 @@ img {
   padding-block: 5rem 1rem;
 }
 
-
 /* 4. --- Header --- */
 
 /* 5. --- Hero --- */
@@ -153,37 +155,42 @@ img {
 
 /* 14. --- Responsive Styles --- */
 
+/* 14.1 --- Mobile --- */
+
+/* 14.2 --- Tablet --- */
+
+/* 14.3 --- Desktop --- */
+@media screen and (min-width: 1200px) {
+  .container-dev {
+    /* height: 100vh; */
+    padding-top: 3rem;
+  }
+
+  .carddev__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .carddev__img {
+    width: 280px;
+  }
+  .carddev__data {
+    width: 279px;
+    padding-inline: 2.5rem;
+  }
+}
+
+/* 14.4 --- XL Desktop --- */
+
+/* 15. --- Animations --- */
+
   /* 14.1 --- Mobile --- */
 
   /* 14.2 --- Tablet --- */
 
   /* 14.3 --- Desktop --- */
-  @media screen and (min-width: 1200px) {
-    .container-dev {
-      /* height: 100vh; */
-      padding-top: 3rem;
-    }
-  
-    .carddev__container {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .carddev__img {
-      width: 280px;
-    }
-    .carddev__data {
-      width: 279px;
-      padding-inline: 2.5rem;
-    }
-  }
 
   /* 14.4 --- XL Desktop --- */
 
 /* 15. --- Animations --- */
-
-
-
-
-
 
 .section__ctitle {
   font: var(--h1-font-size) var(--second-font);
@@ -1000,13 +1007,13 @@ video {
     margin-left: 12rem;
     margin-right: 9rem;
   }
-  
+
   .prog_button {
-  font-size: 1rem;
-  margin-left: 12rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
+    font-size: 1rem;
+    margin-left: 12rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 /* For large devices */
@@ -1269,7 +1276,7 @@ ul {
 }
 .footer-col {
   width: 25%;
-  padding: 0 15px;
+  padding: 0 55px;
 }
 .footer-col h4 {
   font-size: 18px;
@@ -1322,7 +1329,13 @@ ul {
   color: #24262b;
   background-color: #ffffff;
 }
-
+.footer-img {
+  width: 400px;
+}
+#foot-contact,
+#foot-campus {
+  font-weight: 600;
+}
 /*responsive*/
 
 @media (max-width: 767px) {
@@ -1475,4 +1488,3 @@ ul {
     column-gap: 1.5rem;
   }
 }
-
