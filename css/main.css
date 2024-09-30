@@ -894,6 +894,23 @@ video {
 
   .event__ilist {
     margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .event__list {
+    margin-bottom: 0;
+    padding-left: 100px;
+    padding-right: 20px;
+  }
+  .event__item-intro {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .event__images {
+    padding: 0;
+  }
+  .event__data {
+    padding-left: 10px;
   }
 
   .portfolios__content {
