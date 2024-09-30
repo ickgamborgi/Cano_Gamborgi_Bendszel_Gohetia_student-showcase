@@ -1,21 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap");
+/* Let's keep our CSS organized!
 
-/*-- ADDED HERE THE VARIABLES CSS FOR EASY SHORTCUT --*/
+1. Variables
+2. Typography
+3. General Styles
+4. Header
+5. Hero
+6. Introduction
+7. Capstone Project/Video
+8. Project Exhibit
+9. Event
+10. IDP Program
+11. Testimonials
+12. Portfolios
+13. Footer
+14. Responsive Styles
+  14.1. Mobile
+  14.2. Tablet
+  14.3. Desktop
+  14.4. XL Desktop
+15. Animations
+
+*/
+
+/* 1. --- Variables --- 
+corresponding to CSS variables for easier shortcut. */
+
 :root {
   --header-height: 3.5rem;
 
-  /*-- Colors --*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-
+  /* -- Colors --
+  color mode HSL(hue, saturation, lightness) */
   --first-color: hsl(3, 79%, 49%);
   --first-color-dark: hsl(0, 75%, 41%);
   --first-color-darken: hsl(0, 75%, 31%);
   --second-color: hsl(0, 0%, 4%);
   --white-color: hsl(0, 0%, 100%);
 
-  /*-- Font and typography --*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-
+  /* -- Font and typography --
+  .5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --second-font: "Montserrat", sans-serif;
   --biggest-font-size: 3.5rem;
@@ -25,25 +47,26 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
 
-  /*-- Font weight --*/
-
+  /* -- Font weight -- */
   --font-regular: 400;
   --font-semi-bold: 600;
 
-  /*-- z index --*/
-
+  /* -- Z index -- */
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  /*--video player --*/
-
+  /* -- Video Player -- */
   --plyr-color-main: hsl(3, 79%, 49%);
   --plyr-control-icon-size: 1rem;
   --plyr-control-radius: 0px;
   --plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), hsl(3, 79%, 49%));
+
 }
 
-/*-- Responsive typography --*/
+/* 2. --- Typography --- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Titan+One&display=swap");
+
 @media screen and (min-width: 1280px) {
   :root {
     --biggest-font-size: 5.5rem;
@@ -54,6 +77,9 @@
     --small-font-size: 0.875rem;
   }
 }
+
+/* 3. --- General Styles ---
+quick styling and useful general elements */
 
 * {
   box-sizing: border-box;
@@ -103,6 +129,61 @@ img {
 .section {
   padding-block: 5rem 1rem;
 }
+
+
+/* 4. --- Header --- */
+
+/* 5. --- Hero --- */
+
+/* 6. --- Introduction --- */
+
+/* 7. --- Capstone Project/Video --- */
+
+/* 8. --- Project Exhibit --- */
+
+/* 9. --- Event --- */
+
+/* 10. --- IDP Program --- */
+
+/* 11. --- Testimonials --- */
+
+/* 12. --- Portfolios --- */
+
+/* 13. --- Footer --- */
+
+/* 14. --- Responsive Styles --- */
+
+  /* 14.1 --- Mobile --- */
+
+  /* 14.2 --- Tablet --- */
+
+  /* 14.3 --- Desktop --- */
+  @media screen and (min-width: 1200px) {
+    .container-dev {
+      /* height: 100vh; */
+      padding-top: 3rem;
+    }
+  
+    .carddev__container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .carddev__img {
+      width: 280px;
+    }
+    .carddev__data {
+      width: 279px;
+      padding-inline: 2.5rem;
+    }
+  }
+
+  /* 14.4 --- XL Desktop --- */
+
+/* 15. --- Animations --- */
+
+
+
+
+
 
 .section__ctitle {
   font: var(--h1-font-size) var(--second-font);
@@ -1395,21 +1476,3 @@ ul {
   }
 }
 
-/* For large devices */
-@media screen and (min-width: 1200px) {
-  .container-dev {
-    /* height: 100vh; */
-    padding-top: 3rem;
-  }
-
-  .carddev__container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .carddev__img {
-    width: 280px;
-  }
-  .carddev__data {
-    width: 279px;
-    padding-inline: 2.5rem;
-  }
-}
