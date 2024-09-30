@@ -955,6 +955,11 @@ video {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .event__buttons {
+    max-width: 80%;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 
   .prog_button {
     font-size: 1rem;
@@ -1368,6 +1373,9 @@ ul {
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
+  }
+  .quicklink {
+    margin-left: 50px;
   }
 }
 /*=============== CARD DEV===============*/
