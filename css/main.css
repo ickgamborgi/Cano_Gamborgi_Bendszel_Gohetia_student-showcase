@@ -1035,6 +1035,17 @@ video {
     padding-left: 5rem;
     padding-right: 5rem;
   }
+  .event__buttons {
+    max-width: 100%;
+    margin: 0;
+  }
+  .event__ilist {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .event__list {
+    padding-left: 0;
+  }
 }
 
 /* For large devices */
