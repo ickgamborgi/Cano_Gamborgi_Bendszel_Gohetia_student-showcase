@@ -3,3 +3,36 @@
 //  Stores SASS variables like colors, font sizes, spacing, and other values that are likely to be reused.
 
 @use 'fonts';
+
+// Colors
+$first-color: hsl(3, 79%, 49%);
+$first-color-dark: hsl(0, 75%, 41%);
+$first-color-darken: hsl(0, 75%, 31%);
+$second-color: hsl(0, 0%, 4%);
+$white-color: hsl(0, 0%, 100%);
+
+// Typography
+$body-font: "Poppins", sans-serif;
+$second-font: "Montserrat", sans-serif;
+$biggest-font-size: 3.5rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.813rem;
+
+// Font Weights
+$font-regular: 400;
+$font-semi-bold: 600;
+$font-light: 200;
+$font-bold: 800;
+
+// Z-Index
+$z-tooltip: 10;
+$z-fixed: 100;
+
+// Video Player
+$plyr-color-main: hsl(3, 79%, 49%);
+$plyr-control-icon-size: 1rem;
+$plyr-control-radius: 0px;
+$plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), hsl(3, 79%, 49%));

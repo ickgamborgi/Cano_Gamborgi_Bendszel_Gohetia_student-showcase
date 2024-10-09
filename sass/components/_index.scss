@@ -1,3 +1,16 @@
 // This file imports all components. Include any other component that you might add.
 
 // ORDER MATTERS!
+
+@forward '../components/header';
+@forward '../components/hero';
+@forward '../components/intro';
+@forward '../components/pexhibit';
+@forward '../components/event';
+@forward '../components/program';
+@forward '../components/testimonials';
+@forward '../components/portfolio';
+@forward '../components/footer';
+
+@forward '../components/animations';
+@forward '../components/queries';
