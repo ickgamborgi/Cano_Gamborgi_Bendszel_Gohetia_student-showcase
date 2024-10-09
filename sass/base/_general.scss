@@ -36,16 +36,37 @@ img {
     display: none;
 }
 
-.container {
-    max-width: 1400px;
-    margin-inline: 1.5rem;
+// Styles
+
+.section__etitle {
+    font-size: a.$h1-font-size;
+    color: a.$primary-red;
+    font-family: a.$second-font;
+    text-transform: uppercase;
+    font-weight: a.$font-bold;
+    line-height: 40px;
 }
-  
-.grid {
-    display: grid;
-    gap: 1.5rem;
+
+.eSubtitle {
+    font-size: a.$h3-font-size;
+    color: a.$dark-gray;
+    font-weight: a.$font-light;
+    padding-top: 50px;
+    opacity: .75;
 }
-  
-.section {
-    padding-block: 5rem 1rem;
+
+.section__ititle {
+    font-size: a.$h1-font-size;
+    color: a.$white;
+    font-family: a.$second-font;
+    text-transform: uppercase;
+    font-weight: a.$font-bold;
+    line-height: 40px;
+}
+
+.cSubtitle {
+    font-size: a.$h3-font-size;
+    font-weight: a.$font-light;
+    padding-top: 50px;
+    opacity: .75;
 }

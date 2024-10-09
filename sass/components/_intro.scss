@@ -1,1 +1,81 @@
 @use '../abstracts/variables' as a;
+
+// First Introduction
+
+.intro-sec {
+    background-color: a.$secondary-red;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.intro-text {
+    font-family: a.$first-font;
+    font-size: a.$normal-font-size;
+    color: a.$white;
+    font-weight: a.$font-light;
+    margin-top: 25px;
+}
+
+.intro-button {
+    margin-top: 25px;
+    background-color: a.$white;
+    box-shadow: a.$light-shadow;
+    font-family: a.$second-font;
+    font-size: a.$h3-font-size;
+    padding: 10px 0 10px 0;
+    font-weight: a.$font-semi-bold;
+    text-align: center;
+    transition: a.$basic-transition;
+    cursor: pointer;
+
+    a {
+        color: a.$primary-red;
+    }
+
+    &:hover {
+        background-color: a.$dark-gray;
+
+        a {
+            color: a.$white;
+        }
+    }
+}
+
+// Video Introduction
+
+.capstone-sec {
+    background-color: a.$secondary-red;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.video-player {
+    margin-top: 25px;
+    background-color: #ffffff10;
+    padding: 10px;
+    height: fit-content;
+    box-shadow: a.$light-shadow;
+}
+
+.capstone-project-info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.capstone-text {
+    display: flex;
+    gap: 15px;
+
+    i {
+        color: a.$white;
+    }
+
+    p {
+        font-family: a.$first-font;
+        font-size: a.$normal-font-size;
+        color: a.$white;
+        font-weight: a.$font-light;
+    }
+}

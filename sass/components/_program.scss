@@ -1,1 +1,62 @@
 @use '../abstracts/variables' as a;
+
+.program-sec {
+    background-color: a.$white;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.program-hero {
+    overflow:hidden;
+    min-height: 250px;
+    margin-top: 50px;
+    background-image: url(../images/prog-info-img1.jpg);
+    background-size: cover;
+}
+
+.program-button {
+    margin-top: 25px;
+    background-color: a.$primary-red;
+    box-shadow: a.$light-shadow;
+    font-family: a.$second-font;
+    font-size: a.$h3-font-size;
+    padding: 10px 0 10px 0;
+    font-weight: a.$font-semi-bold;
+    text-align: center;
+    transition: a.$basic-transition;
+    cursor: pointer;
+
+    a {
+        color: a.$white;
+    }
+
+    &:hover {
+        background-color: a.$secondary-red;
+
+        a {
+            color: a.$white;
+        }
+    }
+}
+
+.program-info {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    p {
+        font-family: a.$first-font;
+        font-size: a.$normal-font-size;
+        color: a.$mild-gray;
+        font-weight: a.$font-light;
+    }
+}
+
+.program-image {
+    height: 100px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.desktop-image {
+    display: none;
+}

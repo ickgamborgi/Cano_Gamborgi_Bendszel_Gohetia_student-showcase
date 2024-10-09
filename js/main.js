@@ -51,12 +51,12 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.to(".section__ititle", {
-  scrollTrigger: ".section__ititle",
-  x: 20,
-  delay: 0.3,
-});
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.to(".section__ititle", {
+//   scrollTrigger: ".section__ititle",
+//   x: 20,
+//   delay: 0.3,
+// });
 
 // This is for the image slider
 const slider = document.querySelector("#image-slider");

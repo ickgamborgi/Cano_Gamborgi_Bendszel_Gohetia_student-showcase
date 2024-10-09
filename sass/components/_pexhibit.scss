@@ -1,1 +1,7 @@
 @use '../abstracts/variables' as a;
+
+.pexhibit-sec {
+    background-color: a.$white;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}

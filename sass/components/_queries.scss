@@ -1,1 +1,40 @@
 @use '../abstracts/variables' as a;
+
+/* ---Mobile Styles--- */
+@media (min-width: 345px) {
+}
+
+/* ---Tablet Styles--- */
+@media screen and (min-width: 768px) {
+    .desktop-image {
+        display: inline;
+    }
+
+    .testimonial-image-con {
+        margin-top: -75px;
+    }
+
+    .testimonial-image {
+        margin-top: -15px;
+    }
+
+    .testimonial-quote {
+
+        margin-left: 25px;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    .testimonial-bio {
+        margin-left: 25px;
+    }
+}
+
+/* ---Desktop Styles--- */
+@media screen and (min-width: 1200px) {
+    .testimonial-image-con {
+        margin-top: -50px;
+    }
+}  

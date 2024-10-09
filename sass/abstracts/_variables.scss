@@ -5,26 +5,28 @@
 @use 'fonts';
 
 // Colors
-$first-color: hsl(3, 79%, 49%);
-$first-color-dark: hsl(0, 75%, 41%);
-$first-color-darken: hsl(0, 75%, 31%);
-$second-color: hsl(0, 0%, 4%);
-$white-color: hsl(0, 0%, 100%);
+$primary-red: #E2231A;
+$secondary-red: #B3272D;
+$cool-gray: #65656A;
+$light-gray: #C5C5C5;
+$mild-gray: #A0A0A0;
+$dark-gray: #444444;
+$white: #FFFFFF;
 
 // Typography
-$body-font: "Poppins", sans-serif;
+$first-font: "Poppins", sans-serif;
 $second-font: "Montserrat", sans-serif;
 $biggest-font-size: 3.5rem;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
 $h3-font-size: 1rem;
 $normal-font-size: 0.938rem;
-$small-font-size: 0.813rem;
+$paragraph-font-size: 0.813rem;
 
 // Font Weights
 $font-regular: 400;
 $font-semi-bold: 600;
-$font-light: 200;
+$font-light: 100;
 $font-bold: 800;
 
 // Z-Index
@@ -36,3 +38,10 @@ $plyr-color-main: hsl(3, 79%, 49%);
 $plyr-control-icon-size: 1rem;
 $plyr-control-radius: 0px;
 $plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), hsl(3, 79%, 49%));
+
+// Drop Shadow
+$light-shadow: 0 5px 10px rgba(0, 0, 0, 0.275);
+$dark-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+// Transitions
+$basic-transition: all .25s ease-in-out;
