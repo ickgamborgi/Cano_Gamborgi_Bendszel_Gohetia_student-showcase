@@ -215,13 +215,51 @@
           <h5 class="hidden">Project Exhibit Gallery</h5>
           <div class="col-span-full img-slider">
             <div id="slider-container">
-              <div id="image-slider">
-                <img class="slider-image" src="images/f1.png" alt="finalist1" />
-                <img class="slider-image" src="images/f2.png" alt="finalist2" />
-                <img class="slider-image" src="images/f3.png" alt="finalist3" />
+              <div class="slide-wrapper">
+                <div class="slide div1">
+                  <img
+                    src="https://fanshaweinteractive.ca/images/2.jpg"
+                    alt="Image 1"
+                  />
+                  <div class="text-content">
+                    <h2>Finalist #1</h2>
+                    <p>
+                      Kristina Bendszel, Sheldon Gohetia, Carlos Menendez and
+                      Henrique Gamborgi
+                    </p>
+                  </div>
+                </div>
+                <div class="slide div2">
+                  <img
+                    src="https://fanshaweinteractive.ca/images/4.jpg"
+                    alt="Image 2"
+                  />
+                  <div class="text-content">
+                    <h2>Finalist #2</h2>
+                    <p>
+                      Kristina Bendszel, Sheldon Gohetia, Carlos Menendez and
+                      Henrique Gamborgi
+                    </p>
+                  </div>
+                </div>
+                <div class="slide div3">
+                  <img
+                    src="https://fanshaweinteractive.ca/images/3.jpg"
+                    alt="Image 3"
+                  />
+                  <div class="text-content">
+                    <h2>Finalist #3</h2>
+                    <p>
+                      Kristina Bendszel, Sheldon Gohetia, Carlos Menendez and
+                      Henrique Gamborgi
+                    </p>
+                  </div>
+                </div>
               </div>
-              <button id="prev-btn">&#10094;</button>
-              <button id="next-btn">&#10095;</button>
+              <div class="button-container">
+                <button id="prev-btn">&#10094;</button>
+                <button id="next-btn">&#10095;</button>
+              </div>
             </div>
           </div>
         </div>
@@ -354,6 +392,66 @@
         <div class="card__container swiper cardcontent">
           <h4 class="hidden">Testimonials Container Swiper</h4>
         </div>
+        <div id="testimonial-slider">
+          <div class="slide-wrapper-testimonial active">
+            <div class="testimonial-slide">
+              <img
+                src="images/avatar-1.png"
+                alt="Person"
+                class="testimonial-image"
+              />
+              <div class="testimonial-text">
+                <p class="main-text">
+                  “Observing the students collaborating with this project has
+                  been an inspiring journey. The creativity and skill displayed
+                  by the students have been truly outstanding.”
+                </p>
+                <h4 class="testimonial-name">MARCO De Luca</h4>
+                <p class="sub-text">
+                  IDP Program coordinator and Professor for Fanshawe
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <img
+                src="images/avatar-2.png"
+                alt="Person"
+                class="testimonial-image"
+              />
+              <div class="testimonial-text">
+                <p class="main-text">
+                  “The creativity and skill displayed by the students have been
+                  truly outstanding. Observing the students collaborating with
+                  this project has been an inspiring journey.”
+                </p>
+                <h4 class="testimonial-name">ROB Haaf</h4>
+                <p class="sub-text">Web development Professor</p>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <img
+                src="images/avatar-3.png"
+                alt="Person"
+                class="testimonial-image"
+              />
+              <div class="testimonial-text">
+                <p class="main-text">
+                  “Ohh my gosssh! OMG!! WOW!! Excellente!! The creativity and
+                  skill displayed by the students have been truly outstanding.
+                  Observing the students collaborating with this project has
+                  been an inspiring journey.”
+                </p>
+                <h4 class="testimonial-name">STEPHANIE Nichol</h4>
+                <p class="sub-text">Electronic Image Production Professor</p>
+              </div>
+            </div>
+            <!-- Repeat for additional testimonial slides -->
+          </div>
+          <div class="button-container2">
+            <button id="prev-btn2">&#10094;</button>
+            <button id="next-btn2">&#10095;</button>
+          </div>
+        </div>
       </section>
 
       <!-- Website Developers Section -->
@@ -414,21 +512,33 @@
         <h3 class="hidden">Students Portfolios Section</h3>
         <h4 class="section__etitle">
           PORTFOLIO SHOWCASE <br />
-          <span class="eSubtitle">MEET OUR STUDENTS WORK</span><br />
+          <span class="eSubtitle">MEET OUR STUDENTS WORK</span>
         </h4>
         <div class="card__button">
-          <h5><a href="#" class="card__button_filter active">ALL</a></h5>
-          <h5><a href="#" class="card__button_filter">UX DESIGN</a></h5>
-          <h5><a href="#" class="card__button_filter">WEB DEV</a></h5>
-          <h5><a href="#" class="card__button_filter">MOTION DESIGN</a></h5>
+          <h5>
+            <a href="#" class="card__button_filter active" data-filter="ALL"
+              >ALL</a
+            >
+          </h5>
+          <h5>
+            <a href="#" class="card__button_filter" data-filter="DESIGN"
+              >UI/UX DESIGN</a
+            >
+          </h5>
+          <h5>
+            <a href="#" class="card__button_filter" data-filter="DEV"
+              >WEB DEV</a
+            >
+          </h5>
+          <h5>
+            <a href="#" class="card__button_filter" data-filter="MOTION"
+              >MOTION DESIGN</a
+            >
+          </h5>
         </div>
-
-        <!-- <div class="showcase-container">
-          <div id="one">1</div>
-          <div id="two">2</div>
-          <div id="three">3</div>
-          <div id="four">4</div>
-        </div> -->
+        <div>
+          <div class="div-container"></div>
+        </div>
       </section>
 
       <!-- Footer -->
