@@ -1,0 +1,211 @@
+@use '../abstracts/variables' as a;
+
+.developers-sec {
+    background-color: a.$white;
+    padding-top: 125px;
+    padding-bottom: 25px;
+
+    article {
+        margin-bottom: 25px;
+    }
+}
+
+.portfolios-sec {
+    background-color: a.$white;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.title-con {
+    margin-bottom: 50px;
+}
+
+.card-dev {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: a.$secondary-red;
+    border-radius: 20px;
+
+    img {
+        border-radius: 15px;
+        box-shadow: a.$light-shadow;
+    }
+}
+
+.card-dev-info {
+    background-color: #f8f8f8e1;
+    border-radius: 15px;
+    padding-top: 15px;
+    position: absolute;
+    align-self: center;
+    width: 90%;
+    bottom: -15px;
+    box-shadow: a.$dark-shadow;
+    opacity: 0;
+    transition: all .5s cubic-bezier(.13,.96,.39,2.03);
+
+    h5 {
+        font-family: a.$second-font;
+        font-size: a.$h3-font-size;
+        color: a.$primary-red;
+        margin-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    h6 {
+        font-family: a.$second-font;
+        font-size: a.$paragraph-font-size;
+        color: a.$dark-gray;
+        margin-bottom: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.card-dev-link {
+    background-color: a.$secondary-red;
+    padding: 15px 25px 15px 25px;
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+
+    a {
+        color: a.$white;
+        font-family: a.$second-font;
+        font-size: a.$paragraph-font-size;
+    }
+
+    &:hover {
+        background-color: a.$dark-gray;
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+.card-dev:hover .card-dev-info {
+    opacity: 1;
+    bottom: 15px;
+}
+
+.card__button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+  
+.card__button_filter {
+    display: inline-block;
+    background-color: a.$white;
+    border: 2px solid a.$primary-red;
+    font-size: a.$paragraph-font-size;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    color: a.$primary-red;
+    font-family: a.$first-font;
+    cursor: pointer;
+}
+  
+.card__button_filter:hover {
+    background-color: a.$primary-red;
+    color: a.$white;
+    transition: 0.3s ease-in-out;
+}
+
+.card__button_filter.active {
+    background-color: a.$primary-red;
+    color: a.$white;
+  
+}
+
+
+/*  Added rule for the div Container of Student Portfolios showcase */
+
+.div-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.student {
+    background-color: a.$white;
+    border: 1px solid a.$white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+    box-shadow: a.$light-shadow;
+    width: 172px;
+
+    h3 {
+        margin: 0;
+        font-size: a.$h3-font-size;
+        font-family: a.$first-font;
+        color: a.$dark-gray;
+        font-weight: 800;
+    }
+
+    p {
+        margin: 5px 0 10px 0;
+        color: a.$mild-gray;
+        font-size: 12px;
+        font-style: italic;
+        font-family: a.$first-font;
+        font-weight: 200;
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 10px;
+        color: a.$mild-gray;
+        text-decoration: none;
+        font-family: a.$second-font;
+        font-weight: 600;
+        font-size: 12px;
+
+
+        background-color: a.$white;
+        border: 0px solid a.$mild-gray;
+        border-radius: 15px;
+        padding: 5px 5px 5px 0;
+        text-align: left;
+        width: 100%;
+
+    }
+
+    &:hover {
+        background-color: white;
+        border: 1px solid a.$primary-red;
+        transform: scale(1.05);
+        box-shadow: a.$dark-shadow;
+        color: a.$primary-red;
+
+        h3 {
+            color: a.$primary-red;
+        }
+
+        a {
+            color: a.$primary-red;
+            padding-left: 15px;
+            text-align: left;
+            background-color: a.$primary-red;
+            color: a.$white;
+            transition: a.$basic-transition;
+        }
+    }
+  }
+  
+  .student a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    box-shadow: a.$light-shadow;
+  }
+
+  
+  

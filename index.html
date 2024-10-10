@@ -45,11 +45,11 @@
     <header class="header" id="header">
       <h2 class="hidden">Header</h2>
 
-      <nav class="nav container">
+      <nav class="nav container grid-con">
         <h3 class="hidden">Navigation Bar</h3>
 
-        <a href="#" class="nav__logo logo"
-          ><img
+        <a href="https://www.fanshawec.ca/" target="_blank" class="nav__logo logo"
+          ><img class="header-logo"
             src="https://fanshaweinteractive.ca/images/fanshawe-logo.svg"
             alt="Fanshawe Logo"
           />
@@ -69,7 +69,7 @@
               >
             </li>
             <li>
-              <a href="#projects" class="nav__link"
+              <a href="#idp" class="nav__link"
                 ><h5 class="nav__link">Program</h5></a
               >
             </li>
@@ -96,124 +96,112 @@
     <main class="main">
       <h2 class="hidden">Main Content</h2>
 
-      <section class="parallax">
+      <section class="hero-sec full-width-grid-con">
         <h3 class="hidden">Hero Section</h3>
         <img src="images/hero-image.png" id="hill1" alt="Hero Image" />
 
-        <!-- THIS SECTION IS NOT COMPLETE, HIDDEN FOR CHECKPOINT!
-        <h3 id="text">
-          <span class="subrax">JOIN US FOR</span><br /><span class="fanshaw"
-            >FANSHAWE COLLEGE</span
-          >
-          <br />
-          INDUSTRY NIGHT 2025
-        </h3> -->
       </section>
 
       <!-- Introduction Section -->
-      <section class="intro section" id="intro">
+      <section class="intro-sec grid-con" id="intro">
         <h3 class="hidden">Introduction Section</h3>
 
-        <h4 class="section__ititle">
-          Welcome to Industry Night! <br />
-          <span class="cSubtitle">Invitation</span>
-        </h4>
+        <div class="col-span-full">
+          <h4 class="section__ititle">
+            Welcome to Industry Night <br>
+            <span class="cSubtitle">Invitation</span>
+          </h4>
+        </div>
 
-        <div class="event__container container grid">
-          <h4 class="hidden">Text Container</h4>
-          <div class="event__data">
-            <h5 class="hidden">Column 1</h5>
-            <ul class="event__ilist container grid">
-              <li class="event__item-intro">
-                <p>
-                  We are thrilled to invite you to an inspiring evening
-                  dedicated to celebrating the achievements of our Level 4
-                  students as they unveil their projects for the Brothers In
-                  Arms Memorial.
-                </p>
-              </li>
-              <!-- <div class="event__buttons">
-                <a href="#" class="button">FIND US</a>
-              </div> -->
-            </ul>
-          </div>
-          <div class="event__images">
-            <h5 class="hidden">Column 2</h5>
-            <ul class="event__ilist">
-              <li class="event__item-intro">
-                <p>
-                  Join us for an engaging showcase where you can explore their
-                  hard work, interact with their innovative designs, and enjoy a
-                  selection of refreshments in a professional and collaborative
-                  setting!
-                </p>
-              </li>
-            </ul>
-          </div>
+        <div class="col-span-full m-col-start-1 m-col-end-7 intro-text">
+          <p>
+            We are thrilled to invite you to an inspiring evening
+            dedicated to celebrating the achievements of our Level 4
+            students as they unveil their projects for the Brothers In
+            Arms Memorial.
+          </p>
+          <a href="#event" class="button">
+            <div class="intro-button">
+              <h5>JOIN US</h5>
+            </div>
+          </a>
+        </div>
 
-          <div class="event__buttons">
-            <h5 class="hidden">Find Us Button</h5>
-            <a href="#" class="button">FIND US</a>
-          </div>
+        <div class="col-span-full m-col-start-8 m-col-end-14 intro-text">
+          <p>
+            Join us for an engaging showcase where you can explore their
+            hard work, interact with their innovative designs, and enjoy a
+            selection of refreshments in a professional and collaborative
+            setting!
+          </p>
         </div>
       </section>
 
-      <!-- Capstone Proejct Section -->
-      <section class="projects section" id="projects">
+      <!-- Capstone Project Section -->
+      <section class="capstone-sec grid-con" id="capstone-project">
         <h3 class="hidden">Capstone Project</h3>
 
-        <h4 class="section__ititle">
-          Brothers In Arms Memorial <br />
-          <span class="cSubtitle">Student Capstone Project</span>
-        </h4>
-        <div class="projects__container container grid">
-          <video class="projects__img player" controls preload="metadata">
+        <div class="col-span-full">
+          <h4 class="section__ititle">
+            Brothers In Arms Memorial <br>
+            <span class="cSubtitle">Student Capstone Project</span>
+          </h4>
+        </div>
+
+        <div class="video-player col-span-full l-col-start-1 l-col-end-7">
+          <h4 class="hidden">Fanshawe Video</h4>
+          <video class="projects__img player" controls  preload="metadata">
             <source src="video/in-video.mp4" type="video/mp4" />
           </video>
-          <ul class="projects__list container grid">
-            <li class="projects__item">
-              <i class="ri-group-fill"></i>
-              <p>
-                Level 4 students took on the challenge of designing and
-                developing a website for the Brothers In Arms Memorial, an
-                initiative by the Srishti Foundation dedicated to honoring
-                military veterans.
-              </p>
-            </li>
-            <li class="projects__item">
-              <i class="ri-mail-fill"></i>
-              <p>
-                Join us for a showcase featuring the work of our IDP3 and UED
-                students, alongside Spotlight presentations highlighting the The
-                Brothers in Arms project.
-              </p>
-            </li>
-            <li class="projects__item">
-              <i class="ri-youtube-fill"></i>
-              <p>
-                Experience the talent and dedication of our students as they
-                proudly present their portfolios, showcasing their passion and
-                skills across various disciplines.
-              </p>
-            </li>
-          </ul>
+        </div>
+
+        <div class="capstone-project-info col-span-full l-col-start-8 m-col-end-14">
+          <h4 class="hidden">Capstone Project Information</h4>
+
+          <div class="capstone-text">
+            <i class="ri-group-fill"></i>
+            <p>
+              Level 4 students took on the challenge of designing and
+              developing a website for the Brothers In Arms Memorial, an
+              initiative by the Srishti Foundation dedicated to honoring
+              military veterans.
+            </p>
+          </div>
+
+          <div class="capstone-text">
+            <i class="ri-mail-fill"></i>
+            <p>
+              Join us for a showcase featuring the work of our IDP3 and UED
+              students, alongside Spotlight presentations highlighting the The
+              Brothers in Arms project.
+            </p>
+          </div>
+
+          <div class="capstone-text">
+            <i class="ri-youtube-fill"></i>
+            <p>
+              Experience the talent and dedication of our students as they
+              proudly present their portfolios, showcasing their passion and
+              skills across various disciplines.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Project Exhibit Section -->
-      <section class="pexhibit section" id="pexhibits">
+      <section class="pexhibit-sec grid-con" id="pexhibits">
         <h3 class="hidden">Project Exhibit Section</h3>
 
-        <div class="pexhibits__data">
+        <div class="col-span-full">
           <h4 class="section__etitle">
-            PROJECT EXHIBIT <br />
-            <span class="eSubtitle">STUDENT CAPSTONE PROJECT</span>
+            Projects Exhibit <br>
+            <span class="eSubtitle">These are the finalists</span>
           </h4>
         </div>
 
-        <div class="pexhibits__container container grid">
+        <div class="pexhibits__container col-span-full container grid">
           <h5 class="hidden">Project Exhibit Gallery</h5>
-          <div class="col-span-full img-slider">
+          <div class="img-slider">
             <div id="slider-container">
               <div class="slide-wrapper">
                 <div class="slide div1">
@@ -266,323 +254,295 @@
       </section>
 
       <!-- Event Details Section -->
-      <section class="event section" id="event">
+      <section class="event-sec grid-con" id="event">
         <h3 class="hidden">Event Details</h3>
-        <h4 class="section__etitle">
-          INDUSTRY NIGHT EVENT <br />
-          <span class="eSubtitle">INFORMATION AND DETAILS</span>
-        </h4>
 
-        <div class="event__container container grid">
-          <h5 class="hidden">Information Container</h5>
-          <div class="event__data">
-            <ul class="event__list">
-              <li class="event__item">
-                <i class="ri-calendar-2-fill"></i>
-                <p>DATE</p>
-              </li>
-              <li class="event__item-p">
-                <p>
-                  April 24th, 2025 <br />
-                  Friday (4:30pm to 8:00pm)
-                </p>
-              </li>
-              <li class="event__item">
-                <i class="ri-map-pin-line"></i>
-                <p>LOCATION</p>
-              </li>
-              <li class="event__item-p">
-                <p>
-                  137 Dundas St. Fanshawe LDA Building <br />
-                  London, ON N6A 1E9
-                </p>
-              </li>
-            </ul>
+        <div class="col-span-full">
+          <h4 class="section__etitle">
+            Industry Night Event <br>
+            <span class="eSubtitle">Information and Details</span>
+          </h4>
+        </div>
+
+        <div class="event-info col-span-full m-col-start-1 m-col-end-4">
+          <h4 class="hidden">Event Details</h4>
+
+          <div class="event-info-title">
+            
+            <div class="event-info-con">
+              <i class="ri-calendar-2-fill"></i>
+              <h5>Date</h5>
+            </div>
+
+            <div class="event-info-detail">
+              <h6>April 24th, 2025 <br>
+                Friday (4:30pm to 8:00pm)</h6>
+            </div>
           </div>
-          <div class="event__images">
-            <ul class="event__list">
-              <li class="event__item">
+
+          <div class="event-info-title">
+            <div class="event-info-con">
+              <i class="ri-map-pin-line"></i>
+              <h5>Location</h5>
+            </div>
+
+            <div class="event-info-detail">
+              <h6>137 Dundas St. Fanshawe LDA Building <br>
+                London, ON N6A 1E9</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="event-itinerary col-span-full m-col-start-5 m-col-end-14">
+          <h4 class="hidden">Event Itinerary</h4>
+
+            <div class="event-info-title">
+              <div class="event-info-con">
                 <i class="ri-time-line"></i>
-                <p>ITINERARY</p>
-              </li>
-              <li class="event__item-p">
-                <p>
-                  4:30pm - 6:00pm <br />
-                  <span class="sub-item-p"
-                    >Spotlight Presentation @ The Good Foundation Inc.
-                    Theatre</span
-                  >
-                </p>
-              </li>
-              <li class="event__item-p">
-                <p>
-                  6:00pm - 7:00pm <br />
-                  <span class="sub-item-p"
-                    >Food and Drinks, Mingle and Networking @ The Chef's
-                    Table</span
-                  >
-                </p>
-              </li>
-              <li class="event__item-p">
-                <p>
-                  7:00pm - 8:00pm <br />
-                  <span class="sub-item-p"
-                    >Student Portfolio Viewing @ Level 3 Labs</span
-                  >
-                </p>
-              </li>
-            </ul>
+                <h5>Itinerary</h5>
+              </div>
+
+              <div class="event-itinerary-con">
+                <div class="event-info-detail">
+                  <h6>4:30pm - 6:00 pm</h6>
+                  <p>Spotlight Presentations @ The Good Foundation Inc. Theatre</p>
+                </div>
+  
+                <div class="event-info-detail">
+                  <h6>6:00pm - 7:00 pm</h6>
+                  <p>Food &amp; Drinks, Mingle &amp; Networking @ The Chef's Table</p>
+                </div>
+  
+                <div class="event-info-detail">
+                  <h6>7:00pm - 8:00 pm</h6>
+                  <p>Student Portfolio Viewing @ Level 3 Labs</p>
+                </div>
+              </div>
+        
           </div>
         </div>
       </section>
 
       <!-- IDP Program Section -->
-      <section class="idp section" id="idp">
+      <section class="program-sec grid-con" id="idp">
         <h3 class="hidden">IDP Program Section</h3>
-        <h4 class="section__etitle">
-          INTERACTIVE MEDIA DESIGN <br />
-          <span class="eSubtitle">LEARN ABOUT OUR PROGRAM</span>
-        </h4>
 
-        <div class="prog_information">
-          <h5 class="hidden">Program Information</h5>
-          <div class="prog_text">
-            <h6 class="hidden">Paragraph Text</h6>
-
-            <p>
-              Learn about our program and how it prepares students for the
-              industry.
-            </p>
-            <br />
-            <p>
-              Unlock Your Digital Creativity Future with Us! Explore a world of
-              digital design, development, and innovation in our two-year
-              Interactive Media Design program at Fanshawe College.
-            </p>
-            <br />
-            <p>
-              Why Choose Us? Gain a comprehensive skill-set in web design,
-              coding, animation, and more. Access cutting-edge facilities and
-              industry-standard software. Open doors to exciting career
-              opportunities in various fields. Stay ahead with emerging
-              technologies and industry-relevant tools!
-            </p>
-          </div>
-
-          <div class="prog__buttons">
-            <h5 class="hidden">Learn More Button</h5>
-            <a href="#" class="prog_button">LEARN MORE</a>
-          </div>
-
-          <div>
-            <h6 class="hidden">Program Image Gallery</h6>
-            <!-- <img src="images/prog-info-img1.jpg" alt="Presentations of projects to professors"> -->
-          </div>
-
-          <div class="card__container swiper cardcontent">
-            <h6 class="hidden">Card Container Swiper</h6>
-          </div>
+        <div class="col-span-full">
+          <h4 class="section__etitle">
+            Interactive Media Design <br>
+            <span class="eSubtitle">Learn About Our Program</span>
+          </h4>
         </div>
+
+        <div class="program-hero col-span-full m-col-start-1 m-col-end-6"></div>
+
+        <div class="program-info col-span-full m-col-start-6 m-col-end-14">
+          <h6 class="hidden">Program Information</h6>
+          <p>Learn about our program and how it prepares students for the industry.</p> <br>
+          <p>Unlock Your Digital Creativity Future with Us! Explore a world of digital design, development, and innovation in our two-year Interactive Media Design program at Fanshawe College.</p> <br>
+          <p>Why Choose Us? Gain a comprehensive skill-set in web design, coding, animation, and more. Access cutting-edge facilities and industry-standard software. Open doors to exciting career opportunities in various fields. Stay ahead with emerging technologies and industry-relevant tools!</p><br>
+
+          <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next" target="blank" class="button">
+            <div class="program-button">
+              <h5>LEARN MORE</h5>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="program-image col-span-full m-col-start-1 m-col-end-4">
+          <img src="./images/prog-info-img1.jpg" alt="IDP3 Program Picture">
+        </div>
+
+        <div class="program-image col-span-full m-col-start-4 m-col-end-9">
+          <img src="./images/prog-info-img1.jpg" alt="IDP3 Program Picture">
+        </div>
+
+        <div class="program-image col-span-full m-col-start-9 m-col-end-13 ">
+          <img src="./images/prog-info-img1.jpg" alt="IDP3 Program Picture">
+        </div>
+
+        <div class="program-image desktop-image col-span-full m-col-start-1 m-col-end-4">
+          <img src="./images/prog-info-img1.jpg" alt="IDP3 Program Picture">
+        </div>
+
+        <div class="program-image desktop-image col-span-full m-col-start-4 m-col-end-8">
+          <img src="./images/prog-info-img1.jpg" alt="IDP3 Program Picture">
+        </div>
+
+        <div class="program-image desktop-image col-span-full m-col-start-8 m-col-end-13 ">
+          <img src="./images/prog-info-img1.jpg" alt="IDP3 Program Picture">
+        </div>
+
       </section>
 
       <!-- Testimonials Section -->
-      <section class="testimonials section" id="testimonials">
+      <section class="testimonials-sec grid-con" id="testimonials">
         <h3 class="hidden">Testimonials Section</h3>
-        <h4 class="section__etitle">TESTIMONIALS</h4>
-        <div class="card__container swiper cardcontent">
-          <h4 class="hidden">Testimonials Container Swiper</h4>
+
+        <div class="col-span-full">
+          <h4 class="section__etitle">
+            Testimonials <br>
+            <span class="eSubtitle">Feedbacks and Recommendations</span>
+          </h4>
         </div>
-        <div id="testimonial-slider">
-          <div class="slide-wrapper-testimonial active">
-            <div class="testimonial-slide">
-              <img
-                src="images/avatar-1.png"
-                alt="Person"
-                class="testimonial-image"
-              />
-              <div class="testimonial-text">
-                <p class="main-text">
-                  “Observing the students collaborating with this project has
-                  been an inspiring journey. The creativity and skill displayed
-                  by the students have been truly outstanding.”
-                </p>
-                <h4 class="testimonial-name">MARCO De Luca</h4>
-                <p class="sub-text">
-                  IDP Program coordinator and Professor for Fanshawe
-                </p>
-              </div>
-            </div>
-            <div class="testimonial-slide">
-              <img
-                src="images/avatar-2.png"
-                alt="Person"
-                class="testimonial-image"
-              />
-              <div class="testimonial-text">
-                <p class="main-text">
-                  “The creativity and skill displayed by the students have been
-                  truly outstanding. Observing the students collaborating with
-                  this project has been an inspiring journey.”
-                </p>
-                <h4 class="testimonial-name">ROB Haaf</h4>
-                <p class="sub-text">Web development Professor</p>
-              </div>
-            </div>
-            <div class="testimonial-slide">
-              <img
-                src="images/avatar-3.png"
-                alt="Person"
-                class="testimonial-image"
-              />
-              <div class="testimonial-text">
-                <p class="main-text">
-                  “Ohh my gosssh! OMG!! WOW!! Excellente!! The creativity and
-                  skill displayed by the students have been truly outstanding.
-                  Observing the students collaborating with this project has
-                  been an inspiring journey.”
-                </p>
-                <h4 class="testimonial-name">STEPHANIE Nichol</h4>
-                <p class="sub-text">Electronic Image Production Professor</p>
-              </div>
-            </div>
-            <!-- Repeat for additional testimonial slides -->
-          </div>
-          <div class="button-container2">
-            <button id="prev-btn2">&#10094;</button>
-            <button id="next-btn2">&#10095;</button>
+
+        <div class="testimonial-quote col-span-full m-col-start-4 l-col-end-12">
+          <p>"Observing the students collaborating with Foundation Sixty6 has been an inspiring journey. The creativity and skill displayed by the students have been truly outstanding."</p>
+        </div>
+
+        <div class="testimonial-image-con col-span-2 m-col-start-1 m-col-end-4">
+          <div class="testimonial-image"></div>
+        </div>
+
+        <div class="testimonial-bio col-span-2 m-col-span-9 m-col-start-4">
+          <h4>MARCO De Luca</h4>
+          <h5>IDP Program coordinator and professor for Fanshawe</h5>
+          <div>
+            <button id="prev-testimonial">&#10094;</button>
+            <button id="next-testimonial">&#10095;</button>
           </div>
         </div>
+
       </section>
 
       <!-- Website Developers Section -->
-      <section class="portfolios section" id="portfolios">
+      <section class="developers-sec grid-con" id="portfolios">
         <h3 class="hidden">Website Developers Section</h3>
-        <h4 class="section__etitle">
-          WEBSITE DEVELOPERS <br />
-          <span class="eSubtitle">MEET THE TEAM THAT MADE THIS</span>
-        </h4>
-
-        <div class="container-dev">
-          <h5 class="hidden">Team Cards Container</h5>
-          <div class="carddev__container">
-            <article class="carddev__article kristina_card">
-              <img src="images/kristina.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">UI/UX Designer</span>
-                <h6 class="carddev__title">Kristina Bendszel</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-
-            <article class="carddev__article carlos_card">
-              <img src="images/carlos.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">Motion Designer</span>
-                <h6 class="carddev__title">Carlos Menendez</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-
-            <article class="carddev__article henry_card">
-              <img src="images/henry.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">Web Designer</span>
-                <h6 class="carddev__title">Henrique Gamborgi</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-            <article class="carddev__article sheldon_card">
-              <img src="images/sheldon.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">Web Developer</span>
-                <h6 class="carddev__title">Sheldon Gohetia</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-          </div>
+        
+        <div class="col-span-full title-con">
+          <h4 class="section__etitle">
+            Website Developers <br>
+            <span class="eSubtitle">Meet the team that made this</span>
+          </h4>
         </div>
+
+        <!-- Carlos -->
+        <article class="card-dev kristina col-span-full m-col-start-1 m-col-end-7 l-col-end-4">
+          <img src="images/carlos.png" alt="Carlos Menendez Picture"/>
+          <div class="card-dev-info">
+            <h5>CARLOS Menendez</h5>
+            <h6>UX and Motion Designer</h6>
+            <div class="card-dev-link">
+              <a href="https://www.cofolios.com/" target="_blank">carlosmenendez.ca</a>
+            </div>
+          </div> 
+        </article>
+
+        <!-- Henrique -->
+        <article class="card-dev henrique col-span-full m-col-start-7 m-col-end-14 l-col-start-4 l-col-end-7">
+          <img src="images/henry.png" alt="Henrique Gamborgi Picture"/>
+          <div class="card-dev-info">
+            <h5>HENRIQUE Gamborgi</h5>
+            <h6>UX and Web Designer</h6>
+            <div class="card-dev-link">
+              <a href="https://www.cofolios.com/" target="_blank">henriquegamborgi.ca</a>
+            </div>
+          </div> 
+        </article>
+
+        <!-- Kristina -->
+        <article class="card-dev kristina col-span-full m-col-start-1 m-col-end-7 l-col-start-7 l-col-end-10">
+          <img src="images/kristina.png" alt="Kristina Bendszel Picture"/>
+          <div class="card-dev-info">
+            <h5>KRISTINA Bendszel</h5>
+            <h6>UX and Web Designer</h6>
+            <div class="card-dev-link">
+              <a href="https://www.cofolios.com/" target="_blank">kbendszel.ca</a>
+            </div>
+          </div> 
+        </article>
+
+        <!-- Sheldon -->
+        <article class="card-dev sheldon col-span-full m-col-start-7 m-col-end-14 l-col-start-10 l-col-end-14">
+          <img src="images/sheldon.png" alt="Sheldon Gohetia Picture"/>
+          <div class="card-dev-info">
+            <h5>SHELDON Gohetia</h5>
+            <h6>UX and Web Developer</h6>
+            <div class="card-dev-link">
+              <a href="https://www.cofolios.com/" target="_blank">sgohetia.ca</a>
+            </div>
+          </div> 
+        </article>
+
       </section>
 
       <!-- Students Portfolios Section -->
-      <section class="portfolios section" id="sportfolios">
+      <section class="portfolios-sec grid-con" id="sportfolios">
         <h3 class="hidden">Students Portfolios Section</h3>
-        <h4 class="section__etitle">
-          PORTFOLIO SHOWCASE <br />
-          <span class="eSubtitle">MEET OUR STUDENTS WORK</span>
-        </h4>
-        <div class="card__button">
+
+        <div class="col-span-full title-con">
+          <h4 class="section__etitle">
+            Portfolios Showcase <br>
+            <span class="eSubtitle">Meet our students work</span>
+          </h4>
+        </div>
+
+        <div class="card__button col-span-full">
           <h5>
-            <a href="#" class="card__button_filter active" data-filter="ALL"
-              >ALL</a
-            >
+            <a href="#" class="card__button_filter active" data-filter="ALL">ALL</a>
           </h5>
           <h5>
-            <a href="#" class="card__button_filter" data-filter="DESIGN"
-              >UI/UX DESIGN</a
-            >
+            <a href="#" class="card__button_filter" data-filter="DESIGN">UI/UX DESIGN</a>
           </h5>
           <h5>
-            <a href="#" class="card__button_filter" data-filter="DEV"
-              >WEB DEV</a
-            >
+            <a href="#" class="card__button_filter" data-filter="DEV">WEB DEV</a>
           </h5>
           <h5>
-            <a href="#" class="card__button_filter" data-filter="MOTION"
-              >MOTION DESIGN</a
-            >
+            <a href="#" class="card__button_filter" data-filter="MOTION">MOTION DESIGN</a>
           </h5>
         </div>
-        <div>
-          <div class="div-container"></div>
+
+        <div class="col-span-full">
+          <div id="div-container"></div>
         </div>
+
       </section>
 
       <!-- Footer -->
-      <footer class="footer">
+      <footer class="footer grid-con">
         <h3 class="hidden">Footer</h3>
-        <div class="container">
-          <img
-            src="https://fanshaweinteractive.ca/images/fanshawe-logo.svg"
-            alt="Fanshawe Logo"
-            class="footer-img"
-          />
-          <div class="row">
-            <div class="footer-col">
-              <ul>
-                <li><a href="#">Fanshawe College, IDP3</a></li>
-                <li><a href="#">&copy; 2024 All right reserved</a></li>
-                <br />
-                <li><a href="#">137 Dundas Street, Downtown</a></li>
-                <li><a href="#">London, Ontario Canada N6A 1E9</a></li>
-                <br />
-                <li><a href="#" id="foot-contact">Contact Us &rarr;</a></li>
-                <li><a href="#" id="foot-campus">Campuses &rarr;</a></li>
-              </ul>
-            </div>
-            <div class="footer-col quicklink">
-              <h4>QUICK LNK</h4>
-              <ul>
-                <li><a href="#">Fanshawe Website</a></li>
-                <li><a href="#">IDP Program</a></li>
-                <li><a href="#">Partner with Fanshawe</a></li>
-                <li><a href="#">Donate</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Follow Us</h4>
-              <div class="social-links">
-                <a href="#"><i class="ri-linkedin-fill"></i></a>
-                <a href="#"><i class="ri-github-fill"></i></a>
-                <a href="#"><i class="ri-youtube-fill"></i></a>
-              </div>
-            </div>
+
+        <div class="footer-main">
+          <a href="https://www.fanshawec.ca/" target="_blank">
+            <img src="https://fanshaweinteractive.ca/images/fanshawe-logo.svg" alt="Fanshawe Logo" class="col-span-2 footer-img"/>
+          </a>
+        
+        <div class="col-span-3 footer-text">
+          <h4>Fanshawe College, IDP3 <br>
+          &copy; 2024 All Rights Reserved.</h4>
+        </div>
+
+        <div class="col-span-3 footer-text">
+          <h4>137 Dundas Street, Downtown <br>
+          London, Ontario Canada N6A 1E9</h4>
+        </div>
+
+        <div class="footer_links">
+          <a href="https://www.fanshawec.ca/contact-us" target="_blank" class="footer-link" id="foot-contact">Contact Us &rarr;</a>
+          <a href="https://www.fanshawec.ca/why-fanshawe/campuses" target="_blank" class="footer-link" id="foot-campus">Campuses &rarr;</a>  
+        </div>
+        </div>
+        
+
+        <div class="footer-con">
+
+          <div class="footer-buttons">
+            <a class="footer-button" href="#event">Event Details</a>
+            <a class="footer-button" href="https://maps.app.goo.gl/q4BUjBBqXd7ZGjDX6" target="_blank">Event Location</a>
+            <a class="footer-button" href="https://www.fanshawec.ca/why-fanshawe/tour-fanshawe" target="_blank" >Tour Fanshawe</a>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://twitter.com/fanshawecollege" target="_blank" ><i class="social-icon ri-twitter-fill"></i></a>
+            <a href="https://www.facebook.com/FanshaweCollege" target="_blank" ><i class="social-icon ri-facebook-fill"></i></a>
+            <a href="https://instagram.com/fanshawecollege/" target="_blank" ><i class="social-icon ri-instagram-fill"></i></a>
+            <a href="https://www.youtube.com/user/MyFanshawe" target="_blank" ><i class="social-icon ri-youtube-fill"></i></a>
+            <a href="https://www.linkedin.com/school/fanshawe-college" target="_blank" ><i class="social-icon ri-linkedin-fill"></i></a>
           </div>
         </div>
-      </footer>
+
+      </footer> 
 
       <!-- Back to Top Button -->
       <a href="#" class="scrollup" id="scroll-up">

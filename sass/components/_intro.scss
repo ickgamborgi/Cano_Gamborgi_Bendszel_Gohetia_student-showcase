@@ -1,0 +1,95 @@
+@use '../abstracts/variables' as a;
+
+// First Introduction
+
+.intro-sec {
+    background-color: a.$secondary-red;
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+
+.intro-text {
+    font-family: a.$first-font;
+    font-size: a.$normal-font-size;
+    color: a.$white;
+    font-weight: a.$font-light;
+    margin-top: 25px;
+}
+
+.intro-button {
+    margin-top: 25px;
+    background-color: a.$white;
+    box-shadow: a.$light-shadow;
+    font-family: a.$second-font;
+    font-size: a.$h3-font-size;
+    padding: 10px 0 10px 0;
+    font-weight: a.$font-semi-bold;
+    text-align: center;
+    transition: a.$basic-transition;
+    border-radius: 15px;
+    cursor: pointer;
+
+    h5 {
+        color: a.$primary-red;
+        font-size: a.$h3-font-size;
+    }
+
+
+    &:hover {
+        background-color: a.$dark-gray;
+        transform: scale(1.05);
+
+        h5 {
+            color: a.$white;
+        }
+    }
+}
+
+// Video Introduction
+
+.capstone-sec {
+    background-color: a.$secondary-red;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.video-player {
+    margin-top: 25px;
+    background-color: #ffffff10;
+    padding: 5px;
+    height: fit-content;
+    box-shadow: a.$light-shadow;
+}
+
+.capstone-project-info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.capstone-text {
+    display: flex;
+    gap: 15px;
+
+    i {
+        color: a.$white;
+    }
+
+    p {
+        font-family: a.$first-font;
+        font-size: a.$normal-font-size;
+        color: a.$white;
+        font-weight: a.$font-light;
+    }
+}
+
+// Video Player
+
+:root {
+--plyr-color-main: #E2231A;
+--plyr-control-icon-size: 1rem;
+--plyr-control-radius: 15px;
+--plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), #b3272eb7);
+--plyr-font-family: 'Poppins', sans-serif;
+}

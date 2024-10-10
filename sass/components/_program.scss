@@ -1,0 +1,69 @@
+@use '../abstracts/variables' as a;
+
+.program-sec {
+    background-color: a.$white;
+    padding-top: 125px;
+    padding-bottom: 25px;
+
+}
+
+.program-hero {
+    overflow:hidden;
+    min-height: 250px;
+    margin-top: 50px;
+    background-image: url(../images/prog-info-img1.jpg);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-size: cover;
+}
+
+.program-button {
+    margin-top: 25px;
+    background-color: a.$secondary-red;
+    box-shadow: a.$light-shadow;
+    font-family: a.$second-font;
+    font-size: a.$h3-font-size;
+    padding: 10px 0 10px 0;
+    font-weight: a.$font-semi-bold;
+    text-align: center;
+    transition: a.$basic-transition;
+    border-radius: 15px;
+    cursor: pointer;
+
+    h5 {
+        color: a.$white;
+        font-size: a.$h3-font-size;
+    }
+
+
+    &:hover {
+        background-color: a.$dark-gray;
+        transform: scale(1.05);
+
+        h5 {
+            color: a.$white;
+        }
+    }
+}
+
+.program-info {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    p {
+        font-family: a.$first-font;
+        font-size: a.$normal-font-size;
+        color: a.$mild-gray;
+        font-weight: a.$font-light;
+    }
+}
+
+.program-image {
+    height: 100px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.desktop-image {
+    display: none;
+}

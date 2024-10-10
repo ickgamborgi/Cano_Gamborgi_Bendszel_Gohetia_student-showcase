@@ -1,0 +1,103 @@
+@use '../abstracts/variables' as a;
+
+.pexhibit-sec {
+    background-color: a.$white;
+    padding-top: 125px;
+    padding-bottom: 25px;
+}
+
+#pexhibits {
+    background-color: a.$white;
+}
+
+.pexhibits__container {
+    row-gap: 3rem;
+    grid-template-columns: 100%;
+    padding-top: 50px;
+}
+
+/* - Added style and rule for the image slider -*/
+
+#slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slide-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.slide img {
+  object-fit: cover;
+  border-radius: 15px;
+  background-color: a.$secondary-red;
+  padding: 5px;
+}
+
+.text-content {
+  padding-left: 25px;
+  margin-top: 35px;
+  flex: 1;
+  border-left: a.$primary-red solid 2px;
+  font-family: a.$first-font;
+
+  h2 {
+    color: a.$primary-red;
+    font-size: a.$h1-font-size;
+    font-weight: 500;
+    padding-bottom: 15px;
+  }
+
+  p {
+    font-size: a.$normal-font-size;
+    color: a.$mild-gray;
+  }
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: left;
+  margin-top: 25px;
+  padding: 25px 25px 25px 15px;
+}
+
+#prev-btn, #next-btn {
+    width: 40px;
+    margin-right: 10px;
+    background-color: a.$primary-red;
+    box-shadow: a.$light-shadow;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px 0 10px 0;
+    color: a.$white;
+    cursor: pointer;
+    transition: a.$basic-transition;
+
+    &:hover {
+        background-color: a.$secondary-red;
+        transform: scale(1.05);
+    }
+}
+
+#prev-btn {
+  left: 0;
+}
+
+#next-btn {
+  right: 0;
+}

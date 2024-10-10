@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as a;
+
+.testimonials-sec {
+    background-color: a.$white;
+    padding-top: 125px;
+    padding-bottom: 25px;
+}
+
+.testimonial-quote {
+
+    margin-top: 50px;
+
+    p {
+        font-family: a.$first-font;
+        font-size: a.$normal-font-size;
+        color: a.$mild-gray;
+        font-weight: a.$font-light;
+        font-style: italic;
+        margin-bottom: 40px;
+    }
+}
+
+.testimonial-image-con {
+    padding: 5px;
+    background-color: a.$secondary-red;
+    height: fit-content;
+}
+
+.testimonial-image {
+    background-image: url(../images/prog-info-img2.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 150px;
+    margin-top: -15px;
+    margin-right: -15px;
+    border: 2px solid a.$primary-red;
+    border-top-right-radius: 15px;
+    box-shadow: a.$light-shadow;
+}
+
+.testimonial-bio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: a.$first-font;
+    color: a.$dark-gray;
+
+    h4 {
+        font-weight: 600; 
+        font-size: a.$h2-font-size;
+    }
+
+    h5 {
+        font-weight: 200;
+        font-size: a.$paragraph-font-size;
+        color: a.$mild-gray;
+    }
+
+    button {
+        width: 40px;
+        margin-right: 10px;
+        background-color: a.$primary-red;
+        box-shadow: a.$light-shadow;
+        border: 0;
+        border-radius: 15px;
+        padding: 10px 0 10px 0;
+        color: a.$white;
+        cursor: pointer;
+        transition: a.$basic-transition;
+
+        &:hover {
+            background-color: a.$secondary-red;
+            transform: scale(1.05);
+        }
+    }
+}
