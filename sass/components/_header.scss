@@ -5,10 +5,12 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: a.$primary-red;
+    background-color: #e2241aeb;
     z-index: 200;
     transition: box-shadow 0.4s;
+    box-shadow: a.$light-shadow;
   }
+
   .nav {
     position: relative;
     height: 4rem;
@@ -25,7 +27,12 @@
   .logo img {
     width: 200px;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-left: -20px;
+    transition: a.$basic-transition;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
   .nav__close,
   .nav__toggle {
@@ -33,6 +40,16 @@
     font-size: 1.5rem;
     cursor: pointer;
     color: a.$white;
+    transition: a.$basic-transition;
+
+    i {
+      transition: a.$basic-transition;
+    }
+  }
+
+  .nav__toggle i:hover {
+    transform: scale(1.25);
+    text-shadow: a.$dark-shadow;
   }
   
   /* Navigation for mobile devices */
@@ -68,14 +85,19 @@
     transition: color 0.4s;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: a.$basic-transition;
   }
-  .nav__link:hover {
-    color: a.$white;
-  }
+
   .nav__close {
     position: absolute;
     top: 1.15rem;
     right: 1.5rem;
+    transition: a.$basic-transition;
+
+    &:hover {
+      transform: scale(1.25);
+      text-shadow: a.$dark-shadow;
+    }
   }
   .nav__social {
     column-gap: 1rem;
@@ -85,9 +107,6 @@
     color: a.$white;
     font-size: 1.5rem;
     transition: color 0.4s;
-  }
-  .nav__social-link:hover {
-    color: a.$secondary-red;
   }
   
   /* Show menu */
@@ -103,3 +122,8 @@
   .active-link {
     color: a.$secondary-red;
   }
+
+.nav__link:hover {
+  transform: scale(1.05);
+  text-shadow: a.$dark-shadow;
+}

@@ -45,6 +45,23 @@
     .student {
         width: 200px;
     }
+
+    .footer {
+        
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .footer-con {
+        justify-items: right;
+        padding-top: 50px;
+    }
+
+    .footer-buttons {
+        width: 300px;
+    }
+
 }
 
 /* ---Desktop Styles--- */
