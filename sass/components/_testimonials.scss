@@ -70,6 +70,7 @@
 
         &:hover {
             background-color: a.$secondary-red;
+            transform: scale(1.05);
         }
     }
 }

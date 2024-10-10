@@ -2,10 +2,21 @@
 
 /* ---Mobile Styles--- */
 @media (min-width: 345px) {
+    
 }
 
 /* ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
+    
+    .slide {
+        flex-direction: row;
+        gap: 50px;
+
+        img {
+            width: 48%;
+        }
+    }
+    
     .desktop-image {
         display: inline;
     }
@@ -30,11 +41,45 @@
     .testimonial-bio {
         margin-left: 25px;
     }
+
+    .student {
+        width: 200px;
+    }
 }
 
 /* ---Desktop Styles--- */
 @media screen and (min-width: 1200px) {
+
+    .nav {
+        height: 5rem;
+      }
+      .nav__toggle,
+      .nav__close {
+        display: none;
+      }
+      .nav__link {
+        font-size: a.$normal-font-size;
+      }
+      .nav__menu {
+        display: flex;
+        column-gap: 3rem;
+        align-items: center;
+      }
+      .nav__list {
+        flex-direction: row;
+        column-gap: 4rem;
+      }
+
     .testimonial-image-con {
-        margin-top: -50px;
+        margin-top: -75px;
+        height: 200px;
+    }
+
+    .testimonial-image {
+        height: 200px;
+    }
+
+    .student {
+        width: 250px;
     }
 }  

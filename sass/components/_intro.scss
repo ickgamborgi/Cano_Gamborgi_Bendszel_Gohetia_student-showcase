@@ -26,6 +26,7 @@
     font-weight: a.$font-semi-bold;
     text-align: center;
     transition: a.$basic-transition;
+    border-radius: 15px;
     cursor: pointer;
 
     a {
@@ -34,6 +35,7 @@
 
     &:hover {
         background-color: a.$dark-gray;
+        transform: scale(1.05);
 
         a {
             color: a.$white;
@@ -52,7 +54,7 @@
 .video-player {
     margin-top: 25px;
     background-color: #ffffff10;
-    padding: 10px;
+    padding: 5px;
     height: fit-content;
     box-shadow: a.$light-shadow;
 }

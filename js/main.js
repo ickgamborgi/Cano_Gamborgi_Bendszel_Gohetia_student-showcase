@@ -2,7 +2,7 @@ console.log("Javascript file is linked.");
 
 // Video Player
 
-const player = new Plyr('video');
+const player = new Plyr("video");
 
 // SHOW MENU
 const navMenu = document.querySelector("#nav-menu"),
@@ -34,75 +34,274 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 // SHADOW HEADER
 const shadowHeader = () => {
   const header = document.querySelector("#header");
-  // Add a class if the bottom offset is greater than 50 of the viewport
-  this.scrollY >= 50
-    ? header.classList.add("shadow-header")
-    : header.classList.remove("shadow-header");
+
+  // Check if the scroll position is greater than or equal to 50
+  if (window.scrollY >= 50) {
+    header.classList.add("shadow-header");
+  } else {
+    header.classList.remove("shadow-header");
+  }
 };
 window.addEventListener("scroll", shadowHeader);
 
 // ADD SHOW SCROLL UP LOGIC
 const scrollUp = () => {
   const scrollUp = document.querySelector("#scroll-up");
-  // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
-  this.scrollY >= 350
-    ? scrollUp.classList.add("show-scroll")
-    : scrollUp.classList.remove("show-scroll");
+
+  // Check if the scroll position is greater than or equal to 350
+  if (window.scrollY >= 350) {
+    scrollUp.classList.add("show-scroll");
+  } else {
+    scrollUp.classList.remove("show-scroll");
+  }
 };
 window.addEventListener("scroll", scrollUp);
 
-// gsap.registerPlugin(ScrollTrigger);
-// gsap.to(".section__ititle", {
-//   scrollTrigger: ".section__ititle",
-//   x: 20,
-//   delay: 0.3,
-// });
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".section__ititle", {
+  scrollTrigger: ".section__ititle",
+  x: 20,
+  delay: 0.3,
+});
 
-// This is for the image slider
-const slider = document.querySelector("#image-slider");
-const prevBtn = document.querySelector("#prev-btn");
-const nextBtn = document.querySelector("#next-btn");
-let slideWidth = slider.clientWidth;
+//This is for the image slider
 let currentIndex = 0;
-//By using a negative value, the slides are translated to the left
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+const slideWrapper = document.querySelector(".slide-wrapper");
+const autoplayInterval = 10000;
+let autoplayTimer;
+
+function startAutoplay() {
+  autoplayTimer = setInterval(() => {
+    showSlide(currentIndex + 1);
+  }, autoplayInterval);
+}
+
+function stopAutoplay() {
+  clearInterval(autoplayTimer);
+}
+
 function showSlide(index) {
-  const newTransformValue = -index * slideWidth + "px";
-  //The -index is used to calculate the position of the slide in the opposite direction.
-  // For example, if index is 1, then -index becomes -1, which means moving one slide width to the left.
-  // If index is 2, then -index becomes -2, which means moving two slide widths to the left.
-  console.log(newTransformValue);
-  slider.style.transform = "translateX(" + newTransformValue + ")";
+  currentIndex = (index + totalSlides) % totalSlides;
+  const offset = -currentIndex * 100;
+  slideWrapper.style.transform = `translateX(${offset}%)`;
 }
 
-function nextSlide() {
-  console.log(currentIndex);
-  currentIndex++;
-  //if count is greater than or equal to number of slides restart
-  if (currentIndex >= slider.children.length) {
-    currentIndex = 0;
+document.querySelector("#prev-btn").addEventListener("click", () => {
+  stopAutoplay();
+  showSlide(currentIndex - 1);
+  setTimeout(startAutoplay, autoplayInterval);
+});
+
+document.querySelector("#next-btn").addEventListener("click", () => {
+  stopAutoplay();
+  showSlide(currentIndex + 1);
+  setTimeout(startAutoplay, autoplayInterval);
+});
+
+startAutoplay();
+
+//This is for the testimonials
+let testimonialIndex = 0;
+const tesSlides = document.querySelectorAll(".testimonial-slide");
+
+function tesShowSlide(index) {
+  tesSlides.forEach((slide, i) => {
+    if (i === testimonialIndex) {
+      slide.classList.remove("active"); // Remove active class from current slide
+    }
+  });
+
+  testimonialIndex = (index + tesSlides.length) % tesSlides.length;
+
+  const newSlide = tesSlides[testimonialIndex];
+  newSlide.classList.add("active"); // Add active class to fade in
+}
+
+tesShowSlide(testimonialIndex);
+
+document.querySelector("#next-btn2").addEventListener("click", () => {
+  tesShowSlide(testimonialIndex + 1);
+});
+
+document.querySelector("#prev-btn2").addEventListener("click", () => {
+  tesShowSlide(testimonialIndex - 1);
+});
+
+//Students Portfolio Showcase
+const students = [
+  {
+    name: "Carlos",
+    position: "Web Designer",
+    portfolio: "https://aliceportfolio.com",
+    category: "DESIGN",
+  },
+  {
+    name: "Carlos",
+    position: "Graphic Designer",
+    portfolio: "https://bobportfolio.com",
+    category: "DESIGN",
+  },
+  {
+    name: "Carlos",
+    position: "Web Developer",
+    portfolio: "https://charlieportfolio.com",
+    category: "DEV",
+  },
+  {
+    name: "Carlos",
+    position: "Motion Designer",
+    portfolio: "https://dianaportfolio.com",
+    category: "MOTION",
+  },
+  {
+    name: "Carlos",
+    position: "UI/UX Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DESIGN",
+  },
+  {
+    name: "Carlos",
+    position: "Animator/Motion Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "MOTION",
+  },
+  {
+    name: "Carlos",
+    position: "Backend Developer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DEV",
+  },
+  {
+    name: "Carlos",
+    position: "UI/UX Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DESIGN",
+  },
+  {
+    name: "Carlos",
+    position: "Web Developer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DEV",
+  },
+  {
+    name: "Carlos",
+    position: "Motion Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "MOTION",
+  },
+  {
+    name: "Carlos",
+    position: "UI/UX Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DESIGN",
+  },
+  {
+    name: "Carlos",
+    position: "Web Developer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DEV",
+  },
+  {
+    name: "Carlos",
+    position: "Backend Developer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DEV",
+  },
+  {
+    name: "Carlos",
+    position: "Front-end Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DESIGN",
+  },
+  {
+    name: "Carlos",
+    position: "3D Developer",
+    portfolio: "https://ethanportfolio.com",
+    category: "MOTION",
+  },
+  {
+    name: "Carlos",
+    position: "Visual Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "MOTION",
+  },
+  {
+    name: "Carlos",
+    position: "Graphics Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DESIGN",
+  },
+  {
+    name: "Carlos",
+    position: "Motion Graphics",
+    portfolio: "https://ethanportfolio.com",
+    category: "MOTION",
+  },
+  {
+    name: "Carlos",
+    position: "Web Developer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DEV",
+  },
+  {
+    name: "Carlos",
+    position: "UI/UX Designer",
+    portfolio: "https://ethanportfolio.com",
+    category: "DESIGN",
+  },
+];
+
+// Create variable to Select the container div and filter buttons
+const container = document.querySelector(".div-container");
+const filterButtons = document.querySelectorAll(".card__button_filter");
+
+// Create Function to display students based on category
+function displayStudents(filter) {
+  container.innerHTML = "";
+
+  // Filter the students array
+  let filteredStudents;
+
+  if (filter === "ALL") {
+    filteredStudents = students;
+  } else {
+    filteredStudents = students.filter(
+      (student) => student.category === filter
+    );
   }
-  showSlide(currentIndex);
+
+  //Create a Loop through the filtered array and create elements
+  filteredStudents.forEach((student) => {
+    const studentDiv = document.createElement("div");
+    studentDiv.classList.add("student");
+
+    studentDiv.innerHTML = `
+          <h3>${student.name}</h3>
+          <p>${student.position}</p>
+          <a href="${student.portfolio}" target="_blank">View Portfolio</a>
+      `;
+    container.appendChild(studentDiv);
+  });
 }
 
-function prevSlide() {
-  currentIndex--;
-  // if count is less than 0 go to last slide
-  if (currentIndex < 0) {
-    currentIndex = slider.children.length - 1;
-  }
-  showSlide(currentIndex);
-}
+// Add event listeners to filter buttons
+filterButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    // Prevent the default anchor link behavior
+    event.preventDefault();
 
-function updateSlideWidth() {
-  slideWidth = slider.clientWidth;
-  showSlide(currentIndex); // Adjust the position of the current slide on resize
-}
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
 
-// Attach click event handlers to buttons using event listeners
-prevBtn.addEventListener("click", prevSlide);
-nextBtn.addEventListener("click", nextSlide);
+    button.classList.add("active");
 
-window.addEventListener("resize", updateSlideWidth);
+    const filter = button.getAttribute("data-filter");
 
-// Call updateSlideWidth initially to set the correct initial slide width
-updateSlideWidth();
+    //Display students based on selected category
+    displayStudents(filter);
+  });
+});
+
+// Display all students by default
+displayStudents("ALL");

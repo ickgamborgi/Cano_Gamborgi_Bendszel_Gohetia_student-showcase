@@ -45,7 +45,7 @@
     <header class="header" id="header">
       <h2 class="hidden">Header</h2>
 
-      <nav class="nav container">
+      <nav class="nav container grid-con">
         <h3 class="hidden">Navigation Bar</h3>
 
         <a href="#" class="nav__logo logo"
@@ -205,17 +205,55 @@
           </h4>
         </div>
 
-        <div class="pexhibits__con col-span-full">
+        <div class="pexhibits__container col-span-full container grid">
           <h5 class="hidden">Project Exhibit Gallery</h5>
-          <div class="col-span-full img-slider">
+          <div class="img-slider">
             <div id="slider-container">
-              <div id="image-slider">
-                <img class="slider-image" src="images/f1.png" alt="finalist1" />
-                <img class="slider-image" src="images/f2.png" alt="finalist2" />
-                <img class="slider-image" src="images/f3.png" alt="finalist3" />
+              <div class="slide-wrapper">
+                <div class="slide div1">
+                  <img
+                    src="https://fanshaweinteractive.ca/images/2.jpg"
+                    alt="Image 1"
+                  />
+                  <div class="text-content">
+                    <h2>Finalist #1</h2>
+                    <p>
+                      Kristina Bendszel, Sheldon Gohetia, Carlos Menendez and
+                      Henrique Gamborgi
+                    </p>
+                  </div>
+                </div>
+                <div class="slide div2">
+                  <img
+                    src="https://fanshaweinteractive.ca/images/4.jpg"
+                    alt="Image 2"
+                  />
+                  <div class="text-content">
+                    <h2>Finalist #2</h2>
+                    <p>
+                      Kristina Bendszel, Sheldon Gohetia, Carlos Menendez and
+                      Henrique Gamborgi
+                    </p>
+                  </div>
+                </div>
+                <div class="slide div3">
+                  <img
+                    src="https://fanshaweinteractive.ca/images/3.jpg"
+                    alt="Image 3"
+                  />
+                  <div class="text-content">
+                    <h2>Finalist #3</h2>
+                    <p>
+                      Kristina Bendszel, Sheldon Gohetia, Carlos Menendez and
+                      Henrique Gamborgi
+                    </p>
+                  </div>
+                </div>
               </div>
-              <button id="prev-btn">&#10094;</button>
-              <button id="next-btn">&#10095;</button>
+              <div class="button-container">
+                <button id="prev-btn">&#10094;</button>
+                <button id="next-btn">&#10095;</button>
+              </div>
             </div>
           </div>
         </div>
@@ -371,78 +409,96 @@
       </section>
 
       <!-- Website Developers Section -->
-      <section class="portfolios section" id="portfolios">
+      <section class="developers-sec grid-con" id="portfolios">
         <h3 class="hidden">Website Developers Section</h3>
-        <h4 class="section__etitle">
-          WEBSITE DEVELOPERS <br />
-          <span class="eSubtitle">MEET THE TEAM THAT MADE THIS</span>
-        </h4>
-
-        <div class="container-dev">
-          <h5 class="hidden">Team Cards Container</h5>
-          <div class="carddev__container">
-            <article class="carddev__article kristina_card">
-              <img src="images/kristina.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">UI/UX Designer</span>
-                <h6 class="carddev__title">Kristina Bendszel</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-
-            <article class="carddev__article carlos_card">
-              <img src="images/carlos.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">Motion Designer</span>
-                <h6 class="carddev__title">Carlos Menendez</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-
-            <article class="carddev__article henry_card">
-              <img src="images/henry.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">Web Designer</span>
-                <h6 class="carddev__title">Henrique Gamborgi</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-            <article class="carddev__article sheldon_card">
-              <img src="images/sheldon.png" alt="image" class="carddev__img" />
-
-              <div class="carddev__data">
-                <span class="carddev__description">Web Developer</span>
-                <h6 class="carddev__title">Sheldon Gohetia</h6>
-                <a href="#" class="carddev__button">View Portfolio</a>
-              </div>
-            </article>
-          </div>
+        
+        <div class="col-span-full title-con">
+          <h4 class="section__etitle">
+            Website Developers <br>
+            <span class="eSubtitle">Meet the team that made this</span>
+          </h4>
         </div>
+
+        <!-- Carlos -->
+        <article class="card-dev kristina col-span-full m-col-start-1 m-col-end-7 l-col-end-4">
+          <img src="images/carlos.png" alt="Carlos Menendez Picture"/>
+          <div class="card-dev-info">
+            <h5>CARLOS Menendez</h5>
+            <h6>UX and Motion Designer</h6>
+            <div class="card-dev-link">
+              <a href="#">carlosmendez.ca</a>
+            </div>
+          </div> 
+        </article>
+
+        <!-- Henrique -->
+        <article class="card-dev henrique col-span-full m-col-start-7 m-col-end-14 l-col-start-4 l-col-end-7">
+          <img src="images/henry.png" alt="Henrique Gamborgi Picture"/>
+          <div class="card-dev-info">
+            <h5>HENRIQUE Gamborgi</h5>
+            <h6>UX and Web Designer</h6>
+            <div class="card-dev-link">
+              <a href="#">henriquegamborgi.ca</a>
+            </div>
+          </div> 
+        </article>
+
+        <!-- Kristina -->
+        <article class="card-dev kristina col-span-full m-col-start-1 m-col-end-7 l-col-start-7 l-col-end-10">
+          <img src="images/kristina.png" alt="Kristina Bendszel Picture"/>
+          <div class="card-dev-info">
+            <h5>KRISTINA Bendszel</h5>
+            <h6>UX and Web Designer</h6>
+            <div class="card-dev-link">
+              <a href="#">kbendszel.ca</a>
+            </div>
+          </div> 
+        </article>
+
+        <!-- Sheldon -->
+        <article class="card-dev sheldon col-span-full m-col-start-7 m-col-end-14 l-col-start-10 l-col-end-14">
+          <img src="images/sheldon.png" alt="Sheldon Gohetia Picture"/>
+          <div class="card-dev-info">
+            <h5>SHELDON Gohetia</h5>
+            <h6>UX and Web Developer</h6>
+            <div class="card-dev-link">
+              <a href="#">sgohetia.ca</a>
+            </div>
+          </div> 
+        </article>
+
       </section>
 
       <!-- Students Portfolios Section -->
-      <section class="portfolios section" id="sportfolios">
+      <section class="portfolios-sec grid-con" id="sportfolios">
         <h3 class="hidden">Students Portfolios Section</h3>
-        <h4 class="section__etitle">
-          PORTFOLIO SHOWCASE <br />
-          <span class="eSubtitle">MEET OUR STUDENTS WORK</span><br />
-        </h4>
-        <div class="card__button">
-          <h5><a href="#" class="card__button_filter active">ALL</a></h5>
-          <h5><a href="#" class="card__button_filter">UX DESIGN</a></h5>
-          <h5><a href="#" class="card__button_filter">WEB DEV</a></h5>
-          <h5><a href="#" class="card__button_filter">MOTION DESIGN</a></h5>
+
+        <div class="col-span-full title-con">
+          <h4 class="section__etitle">
+            Portfolios Showcase <br>
+            <span class="eSubtitle">Meet our students work</span>
+          </h4>
         </div>
 
-        <!-- <div class="showcase-container">
-          <div id="one">1</div>
-          <div id="two">2</div>
-          <div id="three">3</div>
-          <div id="four">4</div>
-        </div> -->
+        <div class="card__button col-span-full">
+          <h5>
+            <a href="#" class="card__button_filter active" data-filter="ALL">ALL</a>
+          </h5>
+          <h5>
+            <a href="#" class="card__button_filter" data-filter="DESIGN">UI/UX DESIGN</a>
+          </h5>
+          <h5>
+            <a href="#" class="card__button_filter" data-filter="DEV">WEB DEV</a>
+          </h5>
+          <h5>
+            <a href="#" class="card__button_filter" data-filter="MOTION">MOTION DESIGN</a>
+          </h5>
+        </div>
+
+        <div class="col-span-full">
+          <div id="div-container"></div>
+        </div>
+
       </section>
 
       <!-- Footer -->

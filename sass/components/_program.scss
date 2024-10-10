@@ -11,12 +11,15 @@
     min-height: 250px;
     margin-top: 50px;
     background-image: url(../images/prog-info-img1.jpg);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     background-size: cover;
 }
 
 .program-button {
     margin-top: 25px;
     background-color: a.$primary-red;
+    border-radius: 15px;
     box-shadow: a.$light-shadow;
     font-family: a.$second-font;
     font-size: a.$h3-font-size;
@@ -32,6 +35,7 @@
 
     &:hover {
         background-color: a.$secondary-red;
+        transform: scale(1.05);
 
         a {
             color: a.$white;
