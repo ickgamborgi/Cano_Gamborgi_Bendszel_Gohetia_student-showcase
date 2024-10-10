@@ -29,15 +29,17 @@
     border-radius: 15px;
     cursor: pointer;
 
-    a {
+    h5 {
         color: a.$primary-red;
+        font-size: a.$h3-font-size;
     }
+
 
     &:hover {
         background-color: a.$dark-gray;
         transform: scale(1.05);
 
-        a {
+        h5 {
             color: a.$white;
         }
     }
@@ -80,4 +82,14 @@
         color: a.$white;
         font-weight: a.$font-light;
     }
+}
+
+// Video Player
+
+:root {
+--plyr-color-main: #E2231A;
+--plyr-control-icon-size: 1rem;
+--plyr-control-radius: 15px;
+--plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), #b3272eb7);
+--plyr-font-family: 'Poppins', sans-serif;
 }

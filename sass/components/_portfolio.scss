@@ -2,12 +2,18 @@
 
 .developers-sec {
     background-color: a.$white;
-    padding-top: 75px;
-    padding-bottom: 125px;
+    padding-top: 125px;
+    padding-bottom: 25px;
 
     article {
         margin-bottom: 25px;
     }
+}
+
+.portfolios-sec {
+    background-color: a.$white;
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 
 .title-con {
@@ -38,7 +44,7 @@
     bottom: -15px;
     box-shadow: a.$dark-shadow;
     opacity: 0;
-    transition: a.$basic-transition;
+    transition: all .5s cubic-bezier(.13,.96,.39,2.03);
 
     h5 {
         font-family: a.$second-font;

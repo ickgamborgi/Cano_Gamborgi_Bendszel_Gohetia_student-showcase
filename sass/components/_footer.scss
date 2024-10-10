@@ -11,6 +11,11 @@
         width: 200px;
         margin-left: -20px;
         margin-bottom: 30px;
+        transition: a.$basic-transition;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
     
 }
@@ -67,11 +72,17 @@
     text-transform: uppercase;
     transition: a.$basic-transition;
     text-align: center;
+    border-radius: 15px;
 
     &:hover {
         transform: scale(1.05);
         box-shadow: a.$dark-shadow;
     }
+}
+
+.footer-con {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-social {

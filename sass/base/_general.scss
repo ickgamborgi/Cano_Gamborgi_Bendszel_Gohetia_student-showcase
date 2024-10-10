@@ -70,3 +70,27 @@ img {
     padding-top: 50px;
     opacity: .75;
 }
+
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: -50%;
+    background-color: a.$secondary-red;
+    color: a.$white;
+    box-shadow: a.$light-shadow;
+    display: inline-flex;
+    padding: 6px;
+    font-size: a.$h2-font-size;
+    border-radius: 0.25rem;
+    z-index: 150;
+    transition: bottom 0.4s, transform 0.4s;
+}
+  
+.scrollup:hover {
+    transform: translateY(-0.5rem);
+}
+
+/* Show Scroll Up */
+.show-scroll {
+    bottom: 3rem;
+}

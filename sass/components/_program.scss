@@ -2,8 +2,9 @@
 
 .program-sec {
     background-color: a.$white;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 125px;
+    padding-bottom: 25px;
+
 }
 
 .program-hero {
@@ -18,8 +19,7 @@
 
 .program-button {
     margin-top: 25px;
-    background-color: a.$primary-red;
-    border-radius: 15px;
+    background-color: a.$secondary-red;
     box-shadow: a.$light-shadow;
     font-family: a.$second-font;
     font-size: a.$h3-font-size;
@@ -27,17 +27,20 @@
     font-weight: a.$font-semi-bold;
     text-align: center;
     transition: a.$basic-transition;
+    border-radius: 15px;
     cursor: pointer;
 
-    a {
+    h5 {
         color: a.$white;
+        font-size: a.$h3-font-size;
     }
 
+
     &:hover {
-        background-color: a.$secondary-red;
+        background-color: a.$dark-gray;
         transform: scale(1.05);
 
-        a {
+        h5 {
             color: a.$white;
         }
     }
