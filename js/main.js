@@ -57,7 +57,6 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-
 //This is for the image slider
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
@@ -96,153 +95,126 @@ document.querySelector("#next-btn").addEventListener("click", () => {
 
 startAutoplay();
 
-//This is for the testimonials
-let testimonialIndex = 0;
-const tesSlides = document.querySelectorAll(".testimonial-slide");
-
-function tesShowSlide(index) {
-  tesSlides.forEach((slide, i) => {
-    if (i === testimonialIndex) {
-      slide.classList.remove("active"); // Remove active class from current slide
-    }
-  });
-
-  testimonialIndex = (index + tesSlides.length) % tesSlides.length;
-
-  const newSlide = tesSlides[testimonialIndex];
-  newSlide.classList.add("active"); // Add active class to fade in
-}
-
-tesShowSlide(testimonialIndex);
-
-document.querySelector("#next-btn2").addEventListener("click", () => {
-  tesShowSlide(testimonialIndex + 1);
-});
-
-document.querySelector("#prev-btn2").addEventListener("click", () => {
-  tesShowSlide(testimonialIndex - 1);
-});
-
 //Students Portfolio Showcase
 const students = [
   {
     name: "Carlos",
     position: "Web Designer",
-    portfolio: "https://aliceportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
   {
     name: "Carlos",
     position: "Graphic Designer",
-    portfolio: "https://bobportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
   {
     name: "Carlos",
     position: "Web Developer",
-    portfolio: "https://charlieportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DEV",
   },
   {
     name: "Carlos",
     position: "Motion Designer",
-    portfolio: "https://dianaportfolio.com",
+    portfolio: "https://carlos.com",
     category: "MOTION",
   },
   {
     name: "Carlos",
     position: "UI/UX Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
   {
     name: "Carlos",
     position: "Animator/Motion Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "MOTION",
   },
   {
     name: "Carlos",
     position: "Backend Developer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DEV",
   },
   {
     name: "Carlos",
     position: "UI/UX Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
   {
     name: "Carlos",
     position: "Web Developer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DEV",
   },
   {
     name: "Carlos",
     position: "Motion Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "MOTION",
   },
   {
     name: "Carlos",
     position: "UI/UX Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
   {
     name: "Carlos",
     position: "Web Developer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DEV",
   },
   {
     name: "Carlos",
     position: "Backend Developer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DEV",
   },
   {
     name: "Carlos",
     position: "Front-end Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
   {
     name: "Carlos",
     position: "3D Developer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "MOTION",
   },
   {
     name: "Carlos",
     position: "Visual Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "MOTION",
   },
   {
     name: "Carlos",
     position: "Graphics Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
   {
     name: "Carlos",
     position: "Motion Graphics",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "MOTION",
   },
   {
     name: "Carlos",
     position: "Web Developer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DEV",
   },
   {
     name: "Carlos",
     position: "UI/UX Designer",
-    portfolio: "https://ethanportfolio.com",
+    portfolio: "https://carlos.com",
     category: "DESIGN",
   },
 ];
