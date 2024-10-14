@@ -1,9 +1,8 @@
 @use '../abstracts/variables' as a;
 
 .hero-sec {
-    height: 600px;
-
-    img {
-        height: 100px;
-    }
+    background-color: a.$white;
+    height: 650px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
