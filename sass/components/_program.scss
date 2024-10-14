@@ -12,8 +12,7 @@
     min-height: 250px;
     margin-top: 50px;
     background-image: url(../images/prog-info-img1.jpg);
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-radius: 15px;
     background-size: cover;
 }
 
@@ -62,6 +61,7 @@
     height: 100px;
     overflow: hidden;
     margin-top: 25px;
+    border-radius: 15px;
 }
 
 .desktop-image {
