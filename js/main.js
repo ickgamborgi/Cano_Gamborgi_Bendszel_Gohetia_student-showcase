@@ -289,6 +289,33 @@ document.querySelector("#next-btn").addEventListener("click", () => {
 
 startAutoplay();
 
+//This is for the testimonials
+let testimonialIndex = 0;
+const tesSlides = document.querySelectorAll(".testimonial-slide");
+
+function tesShowSlide(index) {
+  tesSlides.forEach((slide, i) => {
+    if (i === testimonialIndex) {
+      slide.classList.remove("active"); // Remove active class from current slide
+    }
+  });
+
+  testimonialIndex = (index + tesSlides.length) % tesSlides.length;
+
+  const newSlide = tesSlides[testimonialIndex];
+  newSlide.classList.add("active"); // Add active class to fade in
+}
+
+tesShowSlide(testimonialIndex);
+
+document.querySelector("#next-btn2").addEventListener("click", () => {
+  tesShowSlide(testimonialIndex + 1);
+});
+
+document.querySelector("#prev-btn2").addEventListener("click", () => {
+  tesShowSlide(testimonialIndex - 1);
+});
+
 //Students Portfolio Showcase
 const students = [
   {
