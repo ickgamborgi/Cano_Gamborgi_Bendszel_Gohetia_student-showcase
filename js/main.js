@@ -57,6 +57,190 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
+//Adding animation for intro text
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".introtext1", {
+  scrollTrigger: {
+    trigger: ".introtext1",
+    toggleActions: "restart none restart none",
+  },
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+gsap.from(".introtext2", {
+  scrollTrigger: {
+    trigger: ".introtext1",
+    toggleActions: "restart none restart none",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+
+//Adding animation for Project section
+gsap.from(".video-player", {
+  scrollTrigger: {
+    trigger: ".video-player",
+    toggleActions: "restart none restart none",
+  },
+  scale: 0.5,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+gsap.from(".capstone-project-info", {
+  scrollTrigger: {
+    trigger: ".capstone-project-info",
+    toggleActions: "restart none restart none",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+
+//Adding animation for Exhibit section
+gsap.from(".pexhibits__container", {
+  scrollTrigger: {
+    trigger: ".pexhibits__container",
+    toggleActions: "restart none restart none",
+  },
+  opacity: 0,
+  duration: 3,
+  ease: "power2.out",
+});
+
+//Adding animation for Event information
+gsap.from(".event-info", {
+  scrollTrigger: {
+    trigger: ".event-info",
+    toggleActions: "restart none restart none",
+  },
+  scale: 0.5,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+gsap.from(".event-itinerary", {
+  scrollTrigger: {
+    trigger: ".event-itinerary",
+    toggleActions: "restart none restart none",
+  },
+  scale: 0.5,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+
+//Adding animation for IDP Program section
+gsap.from(".program-hero", {
+  scrollTrigger: {
+    trigger: ".program-hero",
+    toggleActions: "restart none restart none",
+  },
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+gsap.from(".program-info", {
+  scrollTrigger: {
+    trigger: ".program-info",
+    toggleActions: "restart none restart none",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+gsap.from(".program-img1", {
+  scrollTrigger: {
+    trigger: ".program-img1",
+    toggleActions: "restart none restart none",
+  },
+  x: -100,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+gsap.from(".program-img2", {
+  scrollTrigger: {
+    trigger: ".program-img2",
+    toggleActions: "restart none restart none",
+  },
+  scale: 0.5,
+  opacity: 0,
+  duration: 2,
+  ease: "power2.out",
+});
+gsap.from(".program-img3", {
+  scrollTrigger: {
+    trigger: ".program-img3",
+    toggleActions: "restart none restart none",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 3,
+  ease: "power2.out",
+});
+gsap.from(".program-img4", {
+  scrollTrigger: {
+    trigger: ".program-img1",
+    toggleActions: "restart none restart none",
+  },
+  x: -100,
+  opacity: 0,
+  duration: 2,
+  ease: "power2.out",
+});
+gsap.from(".program-img5", {
+  scrollTrigger: {
+    trigger: ".program-img2",
+    toggleActions: "restart none restart none",
+  },
+  scale: 0.5,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+gsap.from(".program-img6", {
+  scrollTrigger: {
+    trigger: ".program-img3",
+    toggleActions: "restart none restart none",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 2,
+  ease: "power2.out",
+});
+
+gsap.from(".card-dev", {
+  scrollTrigger: {
+    trigger: ".card-dev",
+    toggleActions: "restart none restart none",
+  },
+  scale: 0.5,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
+});
+
+//Adding animation for IDP Program section
+gsap.from(".div-container", {
+  scrollTrigger: {
+    trigger: ".div-container",
+    toggleActions: "restart none restart none",
+  },
+  scale: 0.9,
+  opacity: 0,
+  duration: 2,
+  ease: "power2.out",
+});
+
 //This is for the image slider
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
@@ -348,7 +532,7 @@ const students = [
     position: "UI/UX Designer",
     portfolio: "https://www.cofolios.com/",
     category: ["DESIGN", "DEV"],
-  }
+  },
 ];
 
 // Create variable to Select the container div and filter buttons
@@ -365,8 +549,8 @@ function displayStudents(filter) {
   if (filter === "ALL") {
     filteredStudents = students;
   } else {
-    filteredStudents = students.filter(
-      (student) => student.category.includes(filter)
+    filteredStudents = students.filter((student) =>
+      student.category.includes(filter)
     );
   }
 
