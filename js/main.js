@@ -2,7 +2,7 @@ console.log("Javascript file is linked.");
 
 // Video Player
 
-const player = new Plyr("video");
+const player = new Plyr("#capstoneVideo");
 
 // SHOW MENU
 const navMenu = document.querySelector("#nav-menu"),
@@ -274,21 +274,36 @@ gsap.from(".testimonial-bio", {
   ease: "power2.out",
 });
 
-document.querySelector(".testimonials-sec").addEventListener("click", function() {
-  gsap.from(".testimonial-bio", {
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
+document
+  .querySelector(".testimonials-sec")
+  .addEventListener("click", function () {
+    gsap.from(".testimonial-bio", {
+      x: 100,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+    });
+    gsap.from(".testimonial-con", {
+      x: 100,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+    });
   });
-  gsap.from(".testimonial-con", {
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out",
+
+const video = document.querySelector(".video-container video");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
   });
 });
 
+observer.observe(video);
 
 //This is for the image slider
 let currentIndex = 0;
@@ -328,7 +343,6 @@ document.querySelector("#next-btn").addEventListener("click", () => {
 
 startAutoplay();
 
-
 //This is for the testimonials
 let testimonialIndex = 0;
 const tesSlides = document.querySelectorAll(".testimonial-slide");
@@ -355,7 +369,6 @@ document.querySelector("#test-next-btn").addEventListener("click", () => {
 document.querySelector("#test-prev-btn").addEventListener("click", () => {
   tesShowSlide(testimonialIndex - 1);
 });
-
 
 //Students Portfolio Showcase
 const students = [
