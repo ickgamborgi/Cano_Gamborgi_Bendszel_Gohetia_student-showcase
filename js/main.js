@@ -549,7 +549,6 @@ const students = [
 const container = document.querySelector(".div-container");
 const filterButtons = document.querySelectorAll(".card__button_filter");
 
-// Create Function to display students based on category
 function displayStudents(filter) {
   container.innerHTML = "";
 
@@ -581,7 +580,6 @@ function displayStudents(filter) {
 // Add event listeners to filter buttons
 filterButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
-    // Prevent the default anchor link behavior
     event.preventDefault();
 
     filterButtons.forEach((btn) => btn.classList.remove("active"));
