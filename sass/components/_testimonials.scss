@@ -29,7 +29,7 @@
 .testimonial-con {
     display: flex;
     position: relative;
-    align-items: end;
+    height: stretch;
 
     img {
         object-fit: cover;
@@ -46,6 +46,7 @@
         font-size: a.$normal-font-size;
         color: a.$primary-red;
         font-weight: 600;
+        align-self: end;
         
         span {
             bottom: 0px;

@@ -126,7 +126,7 @@
 .div-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
 }
 
 .student {
@@ -141,7 +141,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
   box-shadow: a.$light-shadow;
-  width: 150px;
+  width: 140px;
 
   h3 {
     margin: 0;
@@ -190,7 +190,7 @@
 
     a {
       color: a.$primary-red;
-      padding-left: 15px;
+      padding-left: 10px;
       text-align: left;
       background-color: a.$primary-red;
       color: a.$white;
