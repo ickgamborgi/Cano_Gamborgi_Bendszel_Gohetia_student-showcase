@@ -22,6 +22,16 @@ if (navClose) {
   });
 }
 
+// CLOSE MENU WHEN CLICKING OUTSIDE
+document.addEventListener("click", (event) => {
+  const isClickInsideMenu = navMenu.contains(event.target);
+  const isClickOnToggle = navToggle.contains(event.target);
+
+  if (!isClickInsideMenu && !isClickOnToggle) {
+    navMenu.classList.remove("show-menu");
+  }
+});
+
 // REMOVE MENU MOBILE
 const navLink = document.querySelectorAll(".nav__link");
 const linkAction = () => {
