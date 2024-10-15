@@ -21,25 +21,16 @@
         display: inline;
     }
 
-    .testimonial-image-con {
-        margin-top: -75px;
-    }
+    .testimonial-con {
 
-    .testimonial-image {
-        margin-top: -15px;
-    }
+      img {
+        width: 260px;
+      }
 
-    .testimonial-quote {
-
-        margin-left: 25px;
-
-        p {
-            margin-bottom: 30px;
-        }
-    }
-
-    .testimonial-bio {
-        margin-left: 25px;
+      p {
+        font-size: a.$h2-font-size;
+        max-width: 500px;
+      }
     }
 
     .student {
@@ -91,14 +82,6 @@
         column-gap: 4rem;
       }
 
-    .testimonial-image-con {
-        margin-top: -75px;
-        height: 200px;
-    }
-
-    .testimonial-image {
-        height: 200px;
-    }
 
     .card-dev-info {
       
