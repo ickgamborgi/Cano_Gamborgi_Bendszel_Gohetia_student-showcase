@@ -289,6 +289,7 @@ document.querySelector("#next-btn").addEventListener("click", () => {
 
 startAutoplay();
 
+
 //This is for the testimonials
 let testimonialIndex = 0;
 const tesSlides = document.querySelectorAll(".testimonial-slide");
@@ -308,13 +309,14 @@ function tesShowSlide(index) {
 
 tesShowSlide(testimonialIndex);
 
-document.querySelector("#next-btn2").addEventListener("click", () => {
+document.querySelector("#test-next-btn").addEventListener("click", () => {
   tesShowSlide(testimonialIndex + 1);
 });
 
-document.querySelector("#prev-btn2").addEventListener("click", () => {
+document.querySelector("#test-prev-btn").addEventListener("click", () => {
   tesShowSlide(testimonialIndex - 1);
 });
+
 
 //Students Portfolio Showcase
 const students = [
