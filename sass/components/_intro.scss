@@ -26,7 +26,7 @@
   font-weight: a.$font-semi-bold;
   text-align: center;
   transition: a.$basic-transition;
-  border-radius: 15px;
+  border-radius: 35px;
   cursor: pointer;
 
   h5 {
@@ -90,7 +90,7 @@
 :root {
   --plyr-color-main: #e2231a;
   --plyr-control-icon-size: 1rem;
-  --plyr-control-radius: 15px;
+  --plyr-control-radius: 35px;
   --plyr-video-controls-background: linear-gradient(
     rgba(0, 0, 0, 0),
     #b3272eb7

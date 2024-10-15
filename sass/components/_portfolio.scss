@@ -26,17 +26,17 @@
   justify-content: center;
   padding: 5px;
   background-color: a.$secondary-red;
-  border-radius: 20px;
+  border-radius: 35px;
 
   img {
-    border-radius: 15px;
+    border-radius: 35px;
     box-shadow: a.$light-shadow;
   }
 }
 
 .card-dev-info {
   background-color: #f8f8f8e1;
-  border-radius: 15px;
+  border-radius: 20px;
   padding-top: 15px;
   position: absolute;
   align-self: center;
@@ -69,7 +69,7 @@
 .card-dev-link {
   background-color: a.$secondary-red;
   padding: 10px 15px 15px 15px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 20px 20px;
 
   a {
     color: a.$white;
@@ -104,7 +104,7 @@
   border: 2px solid a.$primary-red;
   font-size: a.$paragraph-font-size;
   padding: 0.5rem 1.5rem;
-  border-radius: 15px;
+  border-radius: 35px;
   color: a.$primary-red;
   font-family: a.$first-font;
   cursor: pointer;
@@ -135,7 +135,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 15px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease,
