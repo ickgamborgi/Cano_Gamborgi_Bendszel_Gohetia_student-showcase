@@ -251,6 +251,45 @@ gsap.from(".div-container", {
   ease: "power2.out",
 });
 
+//Adding animation for Testimonials
+gsap.from(".testimonial-con", {
+  scrollTrigger: {
+    trigger: ".testimonials-sec",
+    toggleActions: "restart none restart none",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 2,
+  ease: "power2.out",
+});
+
+gsap.from(".testimonial-bio", {
+  scrollTrigger: {
+    trigger: ".testimonials-sec",
+    toggleActions: "restart none restart none",
+  },
+  x: 100,
+  opacity: 0,
+  duration: 2,
+  ease: "power2.out",
+});
+
+document.querySelector(".testimonials-sec").addEventListener("click", function() {
+  gsap.from(".testimonial-bio", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+  });
+  gsap.from(".testimonial-con", {
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out",
+  });
+});
+
+
 //This is for the image slider
 let currentIndex = 0;
 const slides = document.querySelectorAll(".slide");
