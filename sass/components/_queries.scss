@@ -100,6 +100,38 @@
         height: 200px;
     }
 
+    .card-dev-info {
+      
+        h5 {
+          font-family: a.$second-font;
+          font-size: a.$h3-font-size;
+          color: a.$primary-red;
+          margin-bottom: 10px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      
+        h6 {
+          font-family: a.$second-font;
+          color: a.$dark-gray;
+          font-size: 13px;
+          margin-bottom: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      
+      .card-dev-link {
+        background-color: a.$secondary-red;
+        padding: 15px 15px 15px 15px;
+        border-radius: 0 0 15px 15px;
+        cursor: pointer;
+
+        a {
+            font-size: 14px;
+        }
+    }
+
     .student {
         width: 250px;
     }

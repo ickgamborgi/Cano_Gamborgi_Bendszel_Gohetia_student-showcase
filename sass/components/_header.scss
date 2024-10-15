@@ -58,7 +58,7 @@
     background-color: a.$secondary-red;
     width: 70%;
     height: 100%;
-    padding: 7rem 1.5rem 2.5rem 4rem;
+    padding: 4rem 1.5rem 2.5rem 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,7 +73,7 @@
 }
 .nav__list {
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 .nav__link {
   color: a.$white;
@@ -83,6 +83,11 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: a.$basic-transition;
+  gap: 15px;
+
+  h5 {
+    font-size: a.$paragraph-font-size;
+  }
 }
 
 .nav__close {

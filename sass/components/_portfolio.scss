@@ -31,6 +31,7 @@
   img {
     border-radius: 15px;
     box-shadow: a.$light-shadow;
+    height: fit-content;
   }
 }
 
@@ -45,36 +46,38 @@
   box-shadow: a.$dark-shadow;
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.13, 0.96, 0.39, 2.03);
+  cursor: pointer;
 
   h5 {
     font-family: a.$second-font;
-    font-size: a.$h3-font-size;
+    font-size: a.$paragraph-font-size;
     color: a.$primary-red;
     margin-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   h6 {
     font-family: a.$second-font;
-    font-size: a.$paragraph-font-size;
+    font-size: 11px;
     color: a.$dark-gray;
-    margin-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .card-dev-link {
   background-color: a.$secondary-red;
-  padding: 15px 25px 15px 25px;
+  padding: 10px 15px 15px 15px;
   border-radius: 0 0 15px 15px;
-  cursor: pointer;
 
   a {
     color: a.$white;
     font-family: a.$second-font;
-    font-size: a.$paragraph-font-size;
+    font-style: italic;
+    font-size: 11px;
+    cursor: pointer; 
   }
 
   &:hover {
