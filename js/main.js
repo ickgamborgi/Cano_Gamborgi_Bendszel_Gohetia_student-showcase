@@ -68,6 +68,7 @@ const scrollUp = () => {
 window.addEventListener("scroll", scrollUp);
 
 //Adding animation for intro text
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".introtext1", {
@@ -242,8 +243,7 @@ gsap.from(".card-dev", {
 //Adding animation for IDP Program section
 gsap.from(".div-container", {
   scrollTrigger: {
-    trigger: ".div-container",
-    toggleActions: "restart none restart none",
+    trigger: ".div-container"
   },
   scale: 0.9,
   opacity: 0,
@@ -254,8 +254,7 @@ gsap.from(".div-container", {
 //Adding animation for Testimonials
 gsap.from(".testimonial-con", {
   scrollTrigger: {
-    trigger: ".testimonials-sec",
-    toggleActions: "restart none restart none",
+    trigger: ".testimonials-sec"
   },
   x: 100,
   opacity: 0,
@@ -265,8 +264,7 @@ gsap.from(".testimonial-con", {
 
 gsap.from(".testimonial-bio", {
   scrollTrigger: {
-    trigger: ".testimonials-sec",
-    toggleActions: "restart none restart none",
+    trigger: ".testimonials-sec"
   },
   x: 100,
   opacity: 0,
@@ -403,10 +401,10 @@ const students = [
     category: ["DESIGN", "DEV"],
   },
   {
-    name: "Carlos Menendez",
-    position: "UX and Motion Designer",
+    name: "Carlos Cano",
+    position: "Web and Motion Designer",
     portfolio: "https://www.cofolios.com/",
-    category: ["DESIGN", "MOTION"],
+    category: ["DESIGN", "DEV", "MOTION"],
   },
   {
     name: "Chin Ho Lee",
@@ -627,6 +625,7 @@ const students = [
 ];
 
 // Create variable to Select the container div and filter buttons
+
 const container = document.querySelector(".div-container");
 const filterButtons = document.querySelectorAll(".card__button_filter");
 
@@ -676,3 +675,10 @@ filterButtons.forEach((button) => {
 
 // Display all students by default
 displayStudents("ALL");
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+let smoother = ScrollSmoother.create({
+  wrapper: '#smooth-wrapper',
+  content: '#smooth-content'
+})
