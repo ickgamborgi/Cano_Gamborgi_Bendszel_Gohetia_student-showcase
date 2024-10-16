@@ -675,10 +675,3 @@ filterButtons.forEach((button) => {
 
 // Display all students by default
 displayStudents("ALL");
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-let smoother = ScrollSmoother.create({
-  wrapper: '#smooth-wrapper',
-  content: '#smooth-content'
-})

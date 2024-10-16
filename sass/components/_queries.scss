@@ -2,6 +2,7 @@
 
 /* ---Mobile Styles--- */
 @media (min-width: 345px) {
+
     
 }
 
@@ -19,11 +20,22 @@
             width: 48%;
         }
     }
-    
+
+    .desktop-video {
+      display: none;
+    }
+
+    .tablet-video {
+      display: block;
+    }
+
+    .mobile-video {
+      display: none;
+    }
+  
     .desktop-image {
         display: inline;
     }
-
 
     .program-image {
 
@@ -74,6 +86,18 @@
         right: 3rem;
     }
 
+    .desktop-video {
+      display: block;
+    }
+
+    .tablet-video {
+      display: none;
+    }
+
+    .mobile-video {
+      display: none;
+    }
+
     .nav {
         height: 5rem;
       }
@@ -93,7 +117,6 @@
         flex-direction: row;
         column-gap: 4rem;
       }
-
 
     .card-dev-info {
       

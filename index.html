@@ -39,8 +39,6 @@
 
   <!-- BODY -->
   <body>
-    <div id="smooth-wrapper">
-    <div id="smooth-content">
     <h1 class="hidden">Fanshawe's Industry Night 2025</h1>
 
     <!-- Header -->
@@ -105,10 +103,20 @@
       <!-- Hero Section -->
       <section class="hero-section">
         <h3 class="hidden">Hero Section</h3>
-        <div class="video-container">
-          <video src="video/intro_desktop.webm" playsinline loop muted autoplay></video>
+
+        <div class="video-container mobile-video">
+          <video src="video/intro_mobile.mp4" playsinline loop muted autoplay></video>
+        </div>
+
+        <div class="video-container tablet-video">
+          <video src="video/intro_tablet.mp4" playsinline loop muted autoplay></video>
+        </div>
+        
+        <div class="video-container desktop-video">
+          <video src="video/intro_desktop.mp4" playsinline loop muted autoplay></video>
         </div>
       </section>
+        
 
       <!-- Introduction Section -->
       <section class="intro-sec grid-con" id="intro">
@@ -705,12 +713,9 @@
 
       <!-- Script Links -->
       <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-      <script src="js/ScrollSmoother.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
       <script src="js/main.js"></script>
     </main>
-  </div>
-  </div>
   </body>
 </html>
