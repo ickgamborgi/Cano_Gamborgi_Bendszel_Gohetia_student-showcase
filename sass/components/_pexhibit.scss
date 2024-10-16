@@ -56,10 +56,11 @@
   border-left: a.$primary-red solid 2px;
   font-family: a.$first-font;
 
-  h2 {
+  h6 {
     color: a.$primary-red;
+    font-family: a.$second-font;
     font-size: a.$h1-font-size;
-    font-weight: 500;
+    font-weight: bold;
     padding-bottom: 15px;
   }
 
