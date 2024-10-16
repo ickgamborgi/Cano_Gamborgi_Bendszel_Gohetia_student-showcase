@@ -8,6 +8,9 @@
 /* ---Tablet Styles--- */
 @media screen and (min-width: 768px) {
     
+  .video-container {
+    margin-top: 0px;
+  }
     .slide {
         flex-direction: row;
         gap: 50px;
@@ -19,6 +22,15 @@
     
     .desktop-image {
         display: inline;
+    }
+
+
+    .program-image {
+
+      img {
+        height: 300px;
+      }
+
     }
 
     .testimonial-con {
@@ -90,8 +102,8 @@
           font-size: a.$h3-font-size;
           color: a.$primary-red;
           margin-bottom: 10px;
-          padding-left: 15px;
-          padding-right: 15px;
+          padding-left: 25px;
+          padding-right: 25px;
         }
       
         h6 {
@@ -99,15 +111,14 @@
           color: a.$dark-gray;
           font-size: 13px;
           margin-bottom: 15px;
-          padding-left: 15px;
-          padding-right: 15px;
+          padding-left: 25px;
+          padding-right: 25px;
         }
       }
       
       .card-dev-link {
         background-color: a.$secondary-red;
-        padding: 15px 15px 15px 15px;
-        border-radius: 0 0 15px 15px;
+        padding: 15px 25px 25px 25px;
         cursor: pointer;
 
         a {

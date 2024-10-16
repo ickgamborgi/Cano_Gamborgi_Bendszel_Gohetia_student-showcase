@@ -12,9 +12,8 @@ html {
 }
   
 body {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
     background-color: a.$secondary-red;
+    overflow-x: hidden;
     color: black;
 }
   
