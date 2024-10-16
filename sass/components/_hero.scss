@@ -1,11 +1,14 @@
 @use "../abstracts/variables" as a;
 
-.video-section video {
+.video-container video {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
   object-fit: cover;
   z-index: -2;
-  position: relative;
+  // position: relative;
 }
 
 .video-container {
