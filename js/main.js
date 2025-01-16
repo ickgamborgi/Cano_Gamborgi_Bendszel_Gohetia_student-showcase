@@ -1,4 +1,5 @@
 console.log("Javascript file is linked.");
+gsap.registerPlugin(ScrollTrigger) 
 
 // Video Player
 
@@ -66,6 +67,81 @@ const scrollUp = () => {
   }
 };
 window.addEventListener("scroll", scrollUp);
+
+// Intro video Scroll
+
+const canvasMobile = document.querySelector("#explode-view-mobile");
+const canvasDesktop = document.querySelector("#explode-view-desktop");
+const contextMobile = canvasMobile.getContext("2d");
+const contextDesktop = canvasDesktop.getContext("2d");
+
+canvasMobile.width = 1080;
+canvasMobile.height = 1920;
+canvasDesktop.width = 1920;
+canvasDesktop.height = 1080;
+
+const frameCountMobile = 200;
+const frameCountDesktop = 200;
+
+const imagesMobile = [];
+const imagesDesktop = [];
+
+for (let i = 0; i < frameCountMobile; i++) {
+  const imgMobile = new Image();
+  imgMobile.src = `images/intro_mobile_seq/intro_mobile${(i+1).toString().padStart(3, '0')}.png`;
+  imagesMobile.push(imgMobile);
+}
+
+for (let i = 0; i < frameCountDesktop; i++) {
+  const imgDesktop = new Image();
+  imgDesktop.src = `images/intro_desktop_seq/intro_desktop${(i+1).toString().padStart(3, '0')}.png`;
+  imagesDesktop.push(imgDesktop);
+}
+
+const introVidMobile = {
+  frame: 0,
+};
+
+const introVidDesktop = {
+  frame: 0,
+};
+
+gsap.to(introVidMobile, {
+  frame: frameCountMobile - 1,
+  snap: "frame",
+  scrollTrigger: {
+      trigger: "#explode-view-mobile",
+      pin: true,
+      scrub: 2,
+      start: "top top",
+  },
+  onUpdate: renderMobile,
+});
+
+gsap.to(introVidDesktop, {
+  frame: frameCountDesktop - 1,
+  snap: "frame",
+  scrollTrigger: {
+      trigger: "#explode-view-desktop",
+      pin: true,
+      scrub: 2,
+      start: "top top",
+  },
+  onUpdate: renderDesktop,
+});
+
+imagesMobile[0].addEventListener("load", renderMobile);
+imagesDesktop[0].addEventListener("load", renderDesktop);
+
+function renderMobile() {
+  contextMobile.clearRect(0, 0, canvasMobile.width, canvasMobile.height);
+  contextMobile.drawImage(imagesMobile[introVidMobile.frame], 0, 0);
+}
+
+function renderDesktop() {
+  contextDesktop.clearRect(0, 0, canvasDesktop.width, canvasDesktop.height);
+  contextDesktop.drawImage(imagesDesktop[introVidDesktop.frame], 0, 0);
+}
 
 //Adding animation for intro text
 
