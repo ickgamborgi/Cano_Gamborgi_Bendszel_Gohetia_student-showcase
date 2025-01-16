@@ -1,8 +1,19 @@
+#explode-view-mobile {
+  width: 100vw;
+  display: block;
+}
 
-.tablet-video {
+#explode-view-desktop {
+  width: 100vw;
   display: none;
 }
 
-.desktop-video {
-  display: none;
+@media screen and (min-width: 720px) {
+  #explode-view-mobile {
+    display: none;
+  }
+
+  #explode-view-desktop {
+    display: block;
+  }
 }
