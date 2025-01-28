@@ -1,5 +1,5 @@
 console.log("Javascript file is linked.");
-gsap.registerPlugin(ScrollTrigger) 
+gsap.registerPlugin(ScrollTrigger);
 
 // Video Player
 
@@ -88,13 +88,17 @@ const imagesDesktop = [];
 
 for (let i = 0; i < frameCountMobile; i++) {
   const imgMobile = new Image();
-  imgMobile.src = `images/intro_mobile_seq/intro_mobile${(i+1).toString().padStart(3, '0')}.png`;
+  imgMobile.src = `images/intro_mobile_seq/intro_mobile${(i + 1)
+    .toString()
+    .padStart(3, "0")}.png`;
   imagesMobile.push(imgMobile);
 }
 
 for (let i = 0; i < frameCountDesktop; i++) {
   const imgDesktop = new Image();
-  imgDesktop.src = `images/intro_desktop_seq/intro_desktop${(i+1).toString().padStart(3, '0')}.png`;
+  imgDesktop.src = `images/intro_desktop_seq/intro_desktop${(i + 1)
+    .toString()
+    .padStart(3, "0")}.png`;
   imagesDesktop.push(imgDesktop);
 }
 
@@ -110,10 +114,10 @@ gsap.to(introVidMobile, {
   frame: frameCountMobile - 1,
   snap: "frame",
   scrollTrigger: {
-      trigger: "#explode-view-mobile",
-      pin: true,
-      scrub: 2,
-      start: "top top",
+    trigger: "#explode-view-mobile",
+    pin: true,
+    scrub: 2,
+    start: "top top",
   },
   onUpdate: renderMobile,
 });
@@ -122,10 +126,10 @@ gsap.to(introVidDesktop, {
   frame: frameCountDesktop - 1,
   snap: "frame",
   scrollTrigger: {
-      trigger: "#explode-view-desktop",
-      pin: true,
-      scrub: 2,
-      start: "top top",
+    trigger: "#explode-view-desktop",
+    pin: true,
+    scrub: 2,
+    start: "top top",
   },
   onUpdate: renderDesktop,
 });
@@ -319,7 +323,7 @@ gsap.from(".card-dev", {
 //Adding animation for IDP Program section
 gsap.from(".div-container", {
   scrollTrigger: {
-    trigger: ".div-container"
+    trigger: ".div-container",
   },
   scale: 0.9,
   opacity: 0,
@@ -330,7 +334,7 @@ gsap.from(".div-container", {
 //Adding animation for Testimonials
 gsap.from(".testimonial-con", {
   scrollTrigger: {
-    trigger: ".testimonials-sec"
+    trigger: ".testimonials-sec",
   },
   x: 100,
   opacity: 0,
@@ -340,7 +344,7 @@ gsap.from(".testimonial-con", {
 
 gsap.from(".testimonial-bio", {
   scrollTrigger: {
-    trigger: ".testimonials-sec"
+    trigger: ".testimonials-sec",
   },
   x: 100,
   opacity: 0,
@@ -348,36 +352,36 @@ gsap.from(".testimonial-bio", {
   ease: "power2.out",
 });
 
-document
-  .querySelector(".testimonials-sec")
-  .addEventListener("click", function () {
-    gsap.from(".testimonial-bio", {
-      x: 100,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-    });
-    gsap.from(".testimonial-con", {
-      x: 100,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out",
-    });
-  });
+// document
+//   .querySelector(".testimonials-sec")
+//   .addEventListener("click", function () {
+//     gsap.from(".testimonial-bio", {
+//       x: 100,
+//       opacity: 0,
+//       duration: 1,
+//       ease: "power2.out",
+//     });
+//     gsap.from(".testimonial-con", {
+//       x: 100,
+//       opacity: 0,
+//       duration: 1,
+//       ease: "power2.out",
+//     });
+//   });
 
-const video = document.querySelector(".video-container video");
+// const video = document.querySelector(".video-container video");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      video.play();
-    } else {
-      video.pause();
-    }
-  });
-});
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       video.play();
+//     } else {
+//       video.pause();
+//     }
+//   });
+// });
 
-observer.observe(video);
+// observer.observe(video);
 
 //This is for the image slider
 let currentIndex = 0;
@@ -705,6 +709,15 @@ const students = [
 const container = document.querySelector(".div-container");
 const filterButtons = document.querySelectorAll(".card__button_filter");
 
+// Function to shuffle the students array
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = parseInt(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 function displayStudents(filter) {
   container.innerHTML = "";
 
@@ -712,10 +725,14 @@ function displayStudents(filter) {
   let filteredStudents;
 
   if (filter === "ALL") {
-    filteredStudents = students;
+    // filteredStudents = students;
+    filteredStudents = shuffleArray([...students]);
   } else {
-    filteredStudents = students.filter((student) =>
-      student.category.includes(filter)
+    // filteredStudents = students.filter((student) =>
+    //   student.category.includes(filter)
+    // );
+    filteredStudents = shuffleArray(
+      students.filter((student) => student.category.includes(filter))
     );
   }
 
