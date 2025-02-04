@@ -154,7 +154,9 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".introtext1", {
   scrollTrigger: {
     trigger: ".introtext1",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: -100,
   opacity: 0,
@@ -164,7 +166,9 @@ gsap.from(".introtext1", {
 gsap.from(".introtext2", {
   scrollTrigger: {
     trigger: ".introtext1",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: 100,
   opacity: 0,
@@ -176,7 +180,9 @@ gsap.from(".introtext2", {
 gsap.from(".video-player", {
   scrollTrigger: {
     trigger: ".video-player",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   scale: 0.5,
   opacity: 0,
@@ -186,7 +192,9 @@ gsap.from(".video-player", {
 gsap.from(".capstone-project-info", {
   scrollTrigger: {
     trigger: ".capstone-project-info",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: 100,
   opacity: 0,
@@ -198,7 +206,9 @@ gsap.from(".capstone-project-info", {
 gsap.from(".pexhibits__container", {
   scrollTrigger: {
     trigger: ".pexhibits__container",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   opacity: 0,
   duration: 3,
@@ -209,7 +219,9 @@ gsap.from(".pexhibits__container", {
 gsap.from(".event-info", {
   scrollTrigger: {
     trigger: ".event-info",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   scale: 0.5,
   opacity: 0,
@@ -219,7 +231,9 @@ gsap.from(".event-info", {
 gsap.from(".event-itinerary", {
   scrollTrigger: {
     trigger: ".event-itinerary",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   scale: 0.5,
   opacity: 0,
@@ -231,7 +245,9 @@ gsap.from(".event-itinerary", {
 gsap.from(".program-hero", {
   scrollTrigger: {
     trigger: ".program-hero",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: -100,
   opacity: 0,
@@ -241,7 +257,9 @@ gsap.from(".program-hero", {
 gsap.from(".program-info", {
   scrollTrigger: {
     trigger: ".program-info",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: 100,
   opacity: 0,
@@ -251,7 +269,9 @@ gsap.from(".program-info", {
 gsap.from(".program-img1", {
   scrollTrigger: {
     trigger: ".program-img1",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: -100,
   opacity: 0,
@@ -261,7 +281,9 @@ gsap.from(".program-img1", {
 gsap.from(".program-img2", {
   scrollTrigger: {
     trigger: ".program-img2",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   scale: 0.5,
   opacity: 0,
@@ -271,7 +293,9 @@ gsap.from(".program-img2", {
 gsap.from(".program-img3", {
   scrollTrigger: {
     trigger: ".program-img3",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: 100,
   opacity: 0,
@@ -281,7 +305,9 @@ gsap.from(".program-img3", {
 gsap.from(".program-img4", {
   scrollTrigger: {
     trigger: ".program-img1",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: -100,
   opacity: 0,
@@ -291,7 +317,9 @@ gsap.from(".program-img4", {
 gsap.from(".program-img5", {
   scrollTrigger: {
     trigger: ".program-img2",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   scale: 0.5,
   opacity: 0,
@@ -301,7 +329,9 @@ gsap.from(".program-img5", {
 gsap.from(".program-img6", {
   scrollTrigger: {
     trigger: ".program-img3",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   x: 100,
   opacity: 0,
@@ -312,7 +342,9 @@ gsap.from(".program-img6", {
 gsap.from(".card-dev", {
   scrollTrigger: {
     trigger: ".card-dev",
-    toggleActions: "restart none restart none",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none none",
+    once: true,
   },
   scale: 0.5,
   opacity: 0,
@@ -351,37 +383,6 @@ gsap.from(".testimonial-bio", {
   duration: 2,
   ease: "power2.out",
 });
-
-// document
-//   .querySelector(".testimonials-sec")
-//   .addEventListener("click", function () {
-//     gsap.from(".testimonial-bio", {
-//       x: 100,
-//       opacity: 0,
-//       duration: 1,
-//       ease: "power2.out",
-//     });
-//     gsap.from(".testimonial-con", {
-//       x: 100,
-//       opacity: 0,
-//       duration: 1,
-//       ease: "power2.out",
-//     });
-//   });
-
-// const video = document.querySelector(".video-container video");
-
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       video.play();
-//     } else {
-//       video.pause();
-//     }
-//   });
-// });
-
-// observer.observe(video);
 
 //This is for the image slider
 let currentIndex = 0;
@@ -644,7 +645,7 @@ const students = [
   },
   {
     name: "Sheldon Gohetia",
-    position: "UX and Web Developer",
+    position: "Front-End Web Developer",
     portfolio: "https://www.cofolios.com/",
     category: ["DESIGN", "DEV"],
   },
