@@ -6,7 +6,7 @@
   padding-bottom: 25px;
 
   article {
-    margin-bottom: 25px;
+    margin-top: 50px;
   }
 }
 
@@ -25,8 +25,9 @@
   display: flex;
   justify-content: center;
   padding: 5px;
-  background-color: a.$secondary-red;
+  background-color: a.$primary-red;
   border-radius: 35px;
+  cursor: pointer;
 
   img {
     border-radius: 31px;
@@ -35,9 +36,9 @@
 }
 
 .card-dev-info {
-  background-color: #f8f8f8e1;
-  border-radius: 30px;
-  padding-top: 25px;
+  background-color: #f8f8f8fa;
+  border-radius: 20px;
+  padding-top: 15px;
   position: absolute;
   align-self: center;
   width: 90%;
@@ -45,45 +46,51 @@
   box-shadow: a.$dark-shadow;
   transform: scale(0.8);
   opacity: 0;
-  transition: all .6s cubic-bezier(0.13, 0.96, 0.39, 2.03);
+  transition: all 0.6s cubic-bezier(0.13, 0.96, 0.39, 2.03);
   cursor: pointer;
+  line-height: 110%;
+  font-family: a.$first-font;
 
   h5 {
-    font-family: a.$second-font;
-    font-size: a.$paragraph-font-size;
+    font-family: a.$first-font;
+    font-size: a.$h3-font-size;
+    font-weight: 800;
     color: a.$primary-red;
     margin-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  h6 {
-    font-family: a.$second-font;
-    font-size: 11px;
-    color: a.$dark-gray;
-    margin-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+  p {
+    font-family: a.$first-font;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 200;
+    color: a.$mild-gray;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
 .card-dev-link {
-  background-color: a.$secondary-red;
-  padding: 10px 25px 25px 25px;
+  padding: 10px 15px 15px 15px;
   border-radius: 0 0 20px 20px;
+  transition: a.$basic-transition;
+  background-color: a.$primary-red;
 
   a {
     color: a.$white;
     font-family: a.$second-font;
     font-style: italic;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 8px;
-    cursor: pointer; 
+    width: 100%;
+    cursor: pointer;
   }
 
   &:hover {
     background-color: a.$dark-gray;
-    text-decoration: underline;
     color: white;
   }
 }
@@ -98,8 +105,10 @@
 .card__button {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  column-gap: 8px;
+  row-gap: 16px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .card__button_filter {
@@ -144,7 +153,7 @@
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
-  box-shadow: a.$light-shadow;
+  border: 2px solid #e2e2e2e1;
   width: 140px;
 
   h3 {
@@ -175,7 +184,7 @@
 
     background-color: a.$white;
     border: 0px solid a.$mild-gray;
-    border-radius: 15px;
+    border-radius: 35px;
     padding: 5px 5px 5px 0;
     text-align: left;
     width: 100%;
@@ -184,7 +193,7 @@
   &:hover {
     background-color: white;
     border: 1px solid a.$primary-red;
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: a.$dark-shadow;
     color: a.$primary-red;
 
@@ -205,6 +214,6 @@
 
 .student a:hover {
   text-decoration: underline;
-  transform: scale(1.05);
   box-shadow: a.$light-shadow;
+  background-color: a.$dark-gray;
 }

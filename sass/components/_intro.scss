@@ -4,8 +4,8 @@
 
 .intro-sec {
   background-color: a.$secondary-red;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 
 .intro-text {
@@ -13,13 +13,13 @@
   font-size: a.$normal-font-size;
   color: a.$white;
   font-weight: a.$font-light;
-  margin-top: 25px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .intro-button {
-  margin-top: 25px;
-  background-color: a.$white;
-  box-shadow: a.$light-shadow;
+  margin-top: 40px;
+  border: 2px solid white;
   font-family: a.$second-font;
   font-size: a.$h3-font-size;
   padding: 10px 0 10px 0;
@@ -27,19 +27,23 @@
   text-align: center;
   transition: a.$basic-transition;
   border-radius: 35px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
 
   h5 {
-    color: a.$primary-red;
+    color: white;
     font-size: a.$h3-font-size;
   }
 
   &:hover {
-    background-color: a.$dark-gray;
+    background-color: white;
     transform: scale(1.05);
+    box-shadow: a.$light-shadow;
 
     h5 {
-      color: a.$white;
+      color: a.$secondary-red;
     }
   }
 }
@@ -49,24 +53,23 @@
 .capstone-sec {
   background-color: a.$secondary-red;
   padding-top: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 150px;
 }
 
 .video-player {
-  margin-top: 25px;
   background-color: a.$primary-red;
-  padding: 0;
-  height: fit-content;
+  height: max-content;
   box-shadow: a.$light-shadow;
   border-radius: 35px; /* added this to make the video player Rounded corners */
   overflow: hidden;
 }
 
 .capstone-project-info {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
+  align-self: center;
   gap: 25px;
+  margin-top: 50px;
 }
 
 .capstone-text {
@@ -75,6 +78,7 @@
 
   i {
     color: a.$white;
+    padding-top: 5px;
   }
 
   p {

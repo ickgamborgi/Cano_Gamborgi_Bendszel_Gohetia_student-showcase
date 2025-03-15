@@ -1,102 +1,101 @@
-@use '../abstracts/variables' as a;
+@use "../abstracts/variables" as a;
 
 .testimonials-sec {
-    background-color: a.$white;
-    padding-top: 125px;
-    padding-bottom: 25px;
+  background-color: a.$white;
+  padding-top: 125px;
+  padding-bottom: 25px;
 }
 
 #testimonial-slider {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    overflow: hidden;
-    margin: auto;
-  }
-  
-  .testimonial-slide {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
-  
-  .testimonial-slide.active {
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-  }
+  width: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.testimonial-slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial-slide.active {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
 
 .testimonial-con {
-    display: flex;
-    position: relative;
+  display: flex;
+  width: 100%;
 
-    img {
-        object-fit: cover;
-        width: 150px;
-        padding: 5px;
-        background-color: a.$secondary-red;
-        border-radius: 35px;
-        box-shadow: a.$light-shadow;
-        margin-right: 35px;
-    }
+  img {
+    object-fit: cover;
+    width: 150px;
+    padding: 5px;
+    background-color: a.$secondary-red;
+    border-radius: 35px;
+    margin-right: 35px;
+  }
 
-    p {
-        font-family: a.$second-font;
-        font-size: a.$normal-font-size;
-        color: a.$primary-red;
-        font-weight: 600;
-        align-self: end;
-        
-        span {
-            bottom: 0px;
-            color: a.$primary-red;
-            opacity: .5;
-            bottom: 10px;
-        }
+  p {
+    font-family: a.$second-font;
+    font-size: a.$normal-font-size;
+    color: a.$primary-red;
+    font-weight: 600;
+    align-self: end;
+
+    span {
+      bottom: 0px;
+      color: a.$primary-red;
+      opacity: 0.5;
+      bottom: 10px;
     }
+  }
 }
 
 .testimonial-bio {
-    margin-top: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-    h5 {
-        font-family: a.$first-font;
-        font-size: a.$h2-font-size;
-        color: a.$dark-gray;
-        font-weight: a.$font-bold;
-        max-width: 500px;
-    }
+  h5 {
+    font-family: a.$first-font;
+    font-size: a.$h2-font-size;
+    color: a.$dark-gray;
+    font-weight: a.$font-bold;
+    max-width: 500px;
+  }
 
-    h6 {
-        font-family: a.$first-font;
-        font-size: a.$h3-font-size;
-        color: a.$mild-gray;
-        font-weight: a.$font-light;
-        max-width: 350px;
-        border-left: a.$mild-gray 1px solid;
-        padding-left: 15px;
-    }
+  h6 {
+    font-family: a.$first-font;
+    font-size: a.$h3-font-size;
+    color: a.$mild-gray;
+    font-weight: a.$font-light;
+    max-width: 350px;
+    border-left: a.$mild-gray 1px solid;
+    padding-left: 15px;
+  }
 }
 
+#test-prev-btn,
+#test-next-btn {
+  margin-top: 50px;
+  min-width: 40px;
+  margin-right: 10px;
+  background-color: a.$primary-red;
+  box-shadow: a.$light-shadow;
+  border: 0;
+  border-radius: 35px;
+  padding: 10px 0 10px 0;
+  color: a.$white;
+  cursor: pointer;
+  transition: a.$basic-transition;
 
-#test-prev-btn, #test-next-btn {
-    margin-top: 35px;
-    min-width: 40px;
-    margin-right: 10px;
-    background-color: a.$primary-red;
-    box-shadow: a.$light-shadow;
-    border: 0;
-    border-radius: 15px;
-    padding: 10px 0 10px 0;
-    color: a.$white;
-    cursor: pointer;
-    transition: a.$basic-transition;
-
-    &:hover {
-        background-color: a.$secondary-red;
-        transform: scale(1.05);
-    }
+  &:hover {
+    background-color: a.$secondary-red;
+    transform: scale(1.05);
+  }
 }

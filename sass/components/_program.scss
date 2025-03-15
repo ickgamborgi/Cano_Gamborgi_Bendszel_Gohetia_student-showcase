@@ -1,76 +1,75 @@
-@use '../abstracts/variables' as a;
+@use "../abstracts/variables" as a;
 
 .program-sec {
-    background-color: a.$white;
-    padding-top: 125px;
-    padding-bottom: 25px;
-
+  background-color: a.$white;
+  padding-top: 125px;
+  padding-bottom: 25px;
 }
 
 .program-hero {
-    overflow:hidden;
-    min-height: 300px;
-    margin-top: 50px;
-    background-image: url(../images/idp-1.jpg);
-    border-radius: 35px;
-    background-size: cover;
-    background-position: center;
+  overflow: hidden;
+  min-height: 300px;
+  margin-top: 50px;
+  background-image: url(../images/idp-1.jpg);
+  border-radius: 35px;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid a.$secondary-red;
 }
 
 .program-button {
-    margin-top: 25px;
-    background-color: a.$primary-red;
-    box-shadow: a.$light-shadow;
-    font-family: a.$second-font;
+  margin-top: 25px;
+  border: 2px solid a.$primary-red;
+  font-family: a.$second-font;
+  font-size: a.$h3-font-size;
+  padding: 10px 0 10px 0;
+  font-weight: a.$font-semi-bold;
+  text-align: center;
+  transition: a.$basic-transition;
+  border-radius: 35px;
+  cursor: pointer;
+
+  h6 {
+    color: a.$primary-red;
     font-size: a.$h3-font-size;
-    padding: 10px 0 10px 0;
-    font-weight: a.$font-semi-bold;
-    text-align: center;
-    transition: a.$basic-transition;
-    border-radius: 35px;
-    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: a.$primary-red;
 
     h6 {
-        color: a.$white;
-        font-size: a.$h3-font-size;
+      color: a.$white;
     }
-
-
-    &:hover {
-        background-color: a.$dark-gray;
-        transform: scale(1.05);
-
-        h6 {
-            color: a.$white;
-        }
-    }
+  }
 }
 
 .program-info {
-    margin-top: 50px;
-    margin-bottom: 25px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  max-width: 750px;
 
-    p {
-        font-family: a.$first-font;
-        font-size: a.$normal-font-size;
-        color: a.$mild-gray;
-        font-weight: a.$font-light;
-    }
+  p {
+    font-family: a.$first-font;
+    font-size: a.$normal-font-size;
+    color: a.$mild-gray;
+    font-weight: a.$font-light;
+  }
 }
 
 .program-image {
-    overflow: hidden;
-    margin-top: 25px;
-    border-radius: 35px;
+  overflow: hidden;
+  margin-top: 25px;
+  border-radius: 35px;
+  border: 5px solid a.$secondary-red;
 
-    img {
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        height: 300px;
-    }
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+  }
 }
 
 .desktop-image {
-    display: none;
+  display: none;
 }
