@@ -1,19 +1,19 @@
-@use '../abstracts/variables' as a;
+@use "../abstracts/variables" as a;
 
 .pexhibit-sec {
-    background-color: a.$white;
-    padding-top: 125px;
-    padding-bottom: 25px;
+  background-color: a.$white;
+  padding-top: 125px;
+  padding-bottom: 25px;
 }
 
 #pexhibits {
-    background-color: a.$white;
+  background-color: a.$white;
 }
 
 .pexhibits__container {
-    row-gap: 3rem;
-    grid-template-columns: 100%;
-    padding-top: 50px;
+  row-gap: 3rem;
+  grid-template-columns: 100%;
+  padding-top: 50px;
 }
 
 /* - Added style and rule for the image slider -*/
@@ -21,7 +21,6 @@
 #slider-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
   overflow: hidden;
   margin: auto;
 }
@@ -70,7 +69,6 @@
   }
 }
 
-
 .button-container {
   display: flex;
   justify-content: left;
@@ -78,22 +76,23 @@
   padding: 25px 25px 25px 15px;
 }
 
-#prev-btn, #next-btn {
-    width: 40px;
-    margin-right: 10px;
-    background-color: a.$primary-red;
-    box-shadow: a.$light-shadow;
-    border: 0;
-    border-radius: 15px;
-    padding: 10px 0 10px 0;
-    color: a.$white;
-    cursor: pointer;
-    transition: a.$basic-transition;
+#prev-btn,
+#next-btn {
+  width: 40px;
+  margin-right: 10px;
+  background-color: a.$primary-red;
+  border: 0;
+  border-radius: 35px;
+  padding: 10px 0 10px 0;
+  color: a.$white;
+  cursor: pointer;
+  transition: a.$basic-transition;
 
-    &:hover {
-        background-color: a.$secondary-red;
-        transform: scale(1.05);
-    }
+  &:hover {
+    background-color: a.$dark-gray;
+    transform: scale(1.05);
+    box-shadow: a.$light-shadow;
+  }
 }
 
 #prev-btn {

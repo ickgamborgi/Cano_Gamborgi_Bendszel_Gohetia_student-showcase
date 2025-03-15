@@ -45,6 +45,11 @@
   i {
     transition: a.$basic-transition;
   }
+
+  &:hover {
+    transform: scale(1.25);
+    text-shadow: a.$dark-shadow;
+  }
 }
 //To fix the bugs of the burger menu icon still showing when menu toggled is to removed the hover effect.
 
@@ -63,7 +68,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: left 0.4s;
-    box-shadow: a.$light-shadow;
+    box-shadow: 100px 0 100px hsla(0, 0%, 0%, 0.15);
   }
 }
 
