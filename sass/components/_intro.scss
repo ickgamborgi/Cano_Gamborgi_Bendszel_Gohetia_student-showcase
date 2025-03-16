@@ -18,7 +18,8 @@
 }
 
 .intro-button {
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border: 2px solid white;
   font-family: a.$second-font;
   font-size: a.$h3-font-size;
@@ -27,7 +28,7 @@
   text-align: center;
   transition: a.$basic-transition;
   border-radius: 35px;
-  max-width: 250px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
