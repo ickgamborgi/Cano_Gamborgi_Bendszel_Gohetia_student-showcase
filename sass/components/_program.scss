@@ -46,7 +46,10 @@
 .program-info {
   margin-top: 50px;
   margin-bottom: 25px;
-  max-width: 750px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
   p {
     font-family: a.$first-font;
