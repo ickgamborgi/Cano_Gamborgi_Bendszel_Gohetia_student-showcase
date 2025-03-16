@@ -66,12 +66,22 @@ img {
 
 .section__ititle {
   font-size: a.$h1-font-size;
-  color: a.$white;
+  color: white;
   font-family: a.$second-font;
   text-transform: uppercase;
   font-weight: a.$font-bold;
   line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   text-align: center;
+
+  p {
+    font-size: a.$h3-font-size;
+    color: white;
+    font-weight: a.$font-light;
+    opacity: 0.75;
+  }
 }
 
 .cSubtitle {
