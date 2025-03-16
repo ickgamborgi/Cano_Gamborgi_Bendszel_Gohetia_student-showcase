@@ -572,6 +572,12 @@ const students = [
     category: ["FRONTEND", "BACKEND", "DESIGN"],
   },
   {
+    name: "Joyal Gregory",
+    position: "Graphic Designer",
+    portfolio: "https://joyalgregory.ca/",
+    category: "DESIGN",
+  },
+  {
     name: "Justin Rian Reyes",
     position: "Graphic and Motion Designer",
     portfolio: "https://jreyesmotion.com/",
