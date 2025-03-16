@@ -1,5 +1,7 @@
+@use "../abstracts/variables" as a;
+
 .hero-section {
-  background-color: white;
+  background-color: a.$secondary-red;
 }
 
 #explode-view-mobile {
