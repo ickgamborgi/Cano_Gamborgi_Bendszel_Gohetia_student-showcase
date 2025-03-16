@@ -686,6 +686,12 @@ const students = [
     category: ["DESIGN", "PM"],
   },
   {
+    name: "Sashoye Maxwell",
+    position: "Graphic Designer and PM",
+    portfolio: "https://sashoyemaxwell.ca/index.php",
+    category: ["DESIGN", "PM"],
+  },
+  {
     name: "Shauraya Salwan",
     position: "Graphic and Motion Designer",
     portfolio: "https://shaurayasalwan.ca/",
