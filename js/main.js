@@ -548,6 +548,12 @@ const students = [
     category: ["DESIGN", "PM", "FRONTEND"],
   },
   {
+    name: "Het Shah",
+    position: "Graphic and Motion Designer",
+    portfolio: "https://shahhet.ca/",
+    category: ["DESIGN", "MOTION"],
+  },
+  {
     name: "Isaac Bilyea",
     position: "Front-End and Back-End Developer",
     portfolio: "https://isaacbilyea.com/",
