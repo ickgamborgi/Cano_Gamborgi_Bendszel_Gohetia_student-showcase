@@ -596,6 +596,12 @@ const students = [
     category: ["MOTION", "FRONTEND"],
   },
   {
+    name: "Kayla Cooper",
+    position: "Front-End Developer and Motion Designer",
+    portfolio: "https://veilofcrystal.ca/",
+    category: ["MOTION", "FRONTEND"],
+  },
+  {
     name: "Keith Lie",
     position: "Graphic and Motion Designer, Front-End Developer",
     portfolio: "https://keithliecreative.com/",
