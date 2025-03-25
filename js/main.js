@@ -80,25 +80,25 @@ canvasMobile.height = 1920;
 canvasDesktop.width = 1920;
 canvasDesktop.height = 1080;
 
-const frameCountMobile = 200;
-const frameCountDesktop = 200;
+const frameCountMobile = 209;
+const frameCountDesktop = 209;
 
 const imagesMobile = [];
 const imagesDesktop = [];
 
 for (let i = 0; i < frameCountMobile; i++) {
   const imgMobile = new Image();
-  imgMobile.src = `images/intro_mobile_seq/intro_mobile${(i + 1)
+  imgMobile.src = `images/intro_mobile_seq/intro_tablet_${(i + 1)
     .toString()
-    .padStart(3, "0")}.png`;
+    .padStart(3, "0")}.webp`;
   imagesMobile.push(imgMobile);
 }
 
 for (let i = 0; i < frameCountDesktop; i++) {
   const imgDesktop = new Image();
-  imgDesktop.src = `images/intro_desktop_seq/intro_desktop${(i + 1)
+  imgDesktop.src = `images/intro_desktop_seq/intro_desktop_${(i + 1)
     .toString()
-    .padStart(3, "0")}.png`;
+    .padStart(3, "0")}.webp`;
   imagesDesktop.push(imgDesktop);
 }
 
@@ -159,18 +159,6 @@ gsap.from(".introtext1", {
     once: true,
   },
   x: -100,
-  opacity: 0,
-  duration: 1,
-  ease: "power2.out",
-});
-gsap.from(".introtext2", {
-  scrollTrigger: {
-    trigger: ".introtext1",
-    // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
-  },
-  x: 100,
   opacity: 0,
   duration: 1,
   ease: "power2.out",
