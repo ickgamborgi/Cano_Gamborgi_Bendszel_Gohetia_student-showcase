@@ -34,6 +34,12 @@
     display: inline;
   }
 
+  .pre-intro {
+    margin-top: -300px;
+    padding-bottom: 75px;
+    z-index: 1000;
+  }
+
   .program-image {
     img {
       height: 300px;
@@ -94,6 +100,12 @@
 
   .mobile-video {
     display: none;
+  }
+
+  .pre-intro {
+    margin-top: -300px;
+    padding-bottom: 75px;
+    z-index: 1000;
   }
 
   .nav {

@@ -42,13 +42,13 @@
   p {
     font-family: a.$second-font;
     font-size: a.$normal-font-size;
-    color: a.$primary-red;
+    color: a.$mild-gray;
     font-weight: 600;
     align-self: end;
 
     span {
       bottom: 0px;
-      color: a.$primary-red;
+      color: a.$mild-gray;
       opacity: 0.5;
       bottom: 10px;
     }
@@ -64,7 +64,7 @@
   h5 {
     font-family: a.$first-font;
     font-size: a.$h2-font-size;
-    color: a.$dark-gray;
+    color: a.$primary-red;
     font-weight: a.$font-bold;
     max-width: 500px;
   }
@@ -72,10 +72,10 @@
   h6 {
     font-family: a.$first-font;
     font-size: a.$h3-font-size;
-    color: a.$mild-gray;
+    color: a.$primary-red;
     font-weight: a.$font-light;
     max-width: 350px;
-    border-left: a.$mild-gray 1px solid;
+    border-left: a.$primary-red 3px solid;
     padding-left: 15px;
   }
 }

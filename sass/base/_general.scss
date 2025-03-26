@@ -70,10 +70,10 @@ img {
   font-family: a.$second-font;
   text-transform: uppercase;
   font-weight: a.$font-bold;
-  line-height: 120%;
+  line-height: 130%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
   text-align: center;
 
   p {
@@ -81,6 +81,50 @@ img {
     color: white;
     font-weight: a.$font-light;
     opacity: 0.75;
+    line-height: 150%;
+  }
+}
+
+.pre-intro {
+  margin-top: -389px;
+  padding-bottom: 75px;
+  z-index: 1000;
+  background-color: white;
+}
+
+.section__ptitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  z-index: 100;
+  font-family: a.$second-font;
+  text-transform: uppercase;
+
+  img {
+    width: 150px;
+    z-index: 200;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: a.$secondary-red;
+    max-width: 575px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  h4 {
+    font-size: a.$h2-font-size;
+    color: a.$dark-gray;
+    font-weight: a.$font-light;
+    opacity: 0.75;
+    line-height: 150%;
+    max-width: 575px;
   }
 }
 

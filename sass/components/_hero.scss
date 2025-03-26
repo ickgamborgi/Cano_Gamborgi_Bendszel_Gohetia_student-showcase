@@ -1,16 +1,16 @@
 @use "../abstracts/variables" as a;
 
 .hero-section {
-  background-color: a.$secondary-red;
+  background-color: a.$white;
 }
 
 #explode-view-mobile {
-  width: 100vw;
+  width: 100%;
   display: block;
 }
 
 #explode-view-desktop {
-  width: 100vw;
+  width: 100%;
   display: none;
 }
 
