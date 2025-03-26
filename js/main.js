@@ -151,12 +151,46 @@ function renderDesktop() {
 
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.from(".section__ptitle img", 1, {
+  scrollTrigger: {
+    trigger: ".section__ptitle",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none reverse",
+  },
+  scale: 0.5,
+  y: -100,
+  opacity: 0,
+  duration: 2,
+  ease: "bounce.inOut",
+});
+
+gsap.from(".section__ptitle h3", 1, {
+  scrollTrigger: {
+    trigger: ".section__ptitle h3",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none reverse",
+  },
+  scale: 0.5,
+  opacity: 0,
+  ease: "ease2.inOut",
+});
+
+gsap.from(".section__ptitle h4", 2, {
+  scrollTrigger: {
+    trigger: ".section__ptitle h4",
+    // toggleActions: "restart none restart none",
+    toggleActions: "play none none reverse",
+  },
+  scale: 0.5,
+  opacity: 0,
+  ease: "ease2.inOut",
+});
+
 gsap.from(".introtext1", {
   scrollTrigger: {
     trigger: ".introtext1",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: -100,
   opacity: 0,
@@ -169,8 +203,7 @@ gsap.from(".video-player", {
   scrollTrigger: {
     trigger: ".video-player",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   scale: 0.5,
   opacity: 0,
@@ -181,8 +214,7 @@ gsap.from(".capstone-project-info", {
   scrollTrigger: {
     trigger: ".capstone-project-info",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: 100,
   opacity: 0,
@@ -195,8 +227,7 @@ gsap.from(".pexhibits__container", {
   scrollTrigger: {
     trigger: ".pexhibits__container",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   opacity: 0,
   duration: 3,
@@ -208,8 +239,7 @@ gsap.from(".event-info", {
   scrollTrigger: {
     trigger: ".event-info",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   scale: 0.5,
   opacity: 0,
@@ -220,8 +250,7 @@ gsap.from(".event-itinerary", {
   scrollTrigger: {
     trigger: ".event-itinerary",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   scale: 0.5,
   opacity: 0,
@@ -234,8 +263,7 @@ gsap.from(".program-hero", {
   scrollTrigger: {
     trigger: ".program-hero",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: -100,
   opacity: 0,
@@ -246,8 +274,7 @@ gsap.from(".program-info", {
   scrollTrigger: {
     trigger: ".program-info",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: 100,
   opacity: 0,
@@ -258,8 +285,7 @@ gsap.from(".program-img1", {
   scrollTrigger: {
     trigger: ".program-img1",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: -100,
   opacity: 0,
@@ -270,8 +296,7 @@ gsap.from(".program-img2", {
   scrollTrigger: {
     trigger: ".program-img2",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   scale: 0.5,
   opacity: 0,
@@ -282,8 +307,7 @@ gsap.from(".program-img3", {
   scrollTrigger: {
     trigger: ".program-img3",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: 100,
   opacity: 0,
@@ -294,8 +318,7 @@ gsap.from(".program-img4", {
   scrollTrigger: {
     trigger: ".program-img1",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: -100,
   opacity: 0,
@@ -306,8 +329,7 @@ gsap.from(".program-img5", {
   scrollTrigger: {
     trigger: ".program-img2",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   scale: 0.5,
   opacity: 0,
@@ -318,8 +340,7 @@ gsap.from(".program-img6", {
   scrollTrigger: {
     trigger: ".program-img3",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   x: 100,
   opacity: 0,
@@ -331,8 +352,7 @@ gsap.from(".card-dev", {
   scrollTrigger: {
     trigger: ".card-dev",
     // toggleActions: "restart none restart none",
-    toggleActions: "play none none none",
-    once: true,
+    toggleActions: "play none none reverse",
   },
   scale: 0.5,
   opacity: 0,

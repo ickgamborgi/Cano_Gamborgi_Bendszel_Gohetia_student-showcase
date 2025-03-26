@@ -1,64 +1,64 @@
-@use '../abstracts/variables' as a;
+@use "../abstracts/variables" as a;
 
 .event-sec {
-    background-color: a.$white;
-    padding-top: 125px;
-    padding-bottom: 25px;
+  background-color: a.$white;
+  padding-top: 125px;
+  padding-bottom: 25px;
 }
 
 .event-info {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .event-info-con {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 5px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
 }
 
 .event-info-title {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 
-    i {
-        color: a.$mild-gray;
-    }
+  i {
+    color: a.$mild-gray;
+  }
 
-    h5 {
-        font-size: a.$h3-font-size;
-        font-weight: a.$font-light;
-        text-transform: uppercase;
-        font-family: a.$second-font;
-        color: a.$mild-gray;
-    }
+  h5 {
+    font-size: a.$h3-font-size;
+    font-weight: a.$font-light;
+    text-transform: uppercase;
+    font-family: a.$second-font;
+    color: a.$mild-gray;
+  }
 }
 
 .event-info-detail {
-    font-size: a.$h1-font-size;
-    font-weight: a.$font-regular;
-    text-transform: capitalize;
-    font-family: a.$first-font;
-    color: a.$primary-red;
-    border-left: a.$primary-red solid 1px;
-    padding-left: 15px;
+  font-size: a.$h1-font-size;
+  font-weight: a.$font-regular;
+  text-transform: capitalize;
+  font-family: a.$first-font;
+  color: a.$primary-red;
+  border-left: a.$primary-red solid 3px;
+  padding-left: 15px;
 
-    p {
-        font-size: a.$normal-font-size;
-        color: a.$mild-gray;
-        font-weight: a.$font-light;
-    }
+  p {
+    font-size: a.$normal-font-size;
+    color: a.$mild-gray;
+    font-weight: a.$font-light;
+  }
 }
 
 .event-itinerary {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .event-itinerary-con {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
