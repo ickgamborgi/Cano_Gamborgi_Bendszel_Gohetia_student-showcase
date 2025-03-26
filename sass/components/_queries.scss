@@ -40,6 +40,16 @@
     z-index: 1000;
   }
 
+  .section__ptitle {
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      font-size: a.$h2-font-size;
+    }
+  }
+
   .program-image {
     img {
       height: 300px;
@@ -106,6 +116,17 @@
     margin-top: -300px;
     padding-bottom: 75px;
     z-index: 1000;
+  }
+
+  .section__ptitle {
+    h3 {
+      font-size: 2.75rem;
+    }
+
+    h4 {
+      font-size: a.$h2-font-size;
+      max-width: 575px;
+    }
   }
 
   .nav {
